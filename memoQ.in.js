@@ -107,7 +107,8 @@ function fill(id, value) {
 		t.appendChild(c);
 	}
 	c.textContent=value;
-	c.style.background='#ccc!important';
+	c.style.background='#ccc';
+	t.dispatchEvent(new Event('input'));
 }
 
 
