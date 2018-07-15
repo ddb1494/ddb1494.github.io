@@ -10,30 +10,30 @@
 /*
 <tbody id="gridTableBody">
 <tr  data-id="0"  class style="display:table-row">
-	<td class="order">1.</td>
-	<td class="original-segment-grid">
-		<div class="editor-cell-container" style="max-height:534px">
-			<div class="editor-cell">
-				<div class="asset-container"></div>
-				<div class="content-container-wrapper">
-					<span class="content-container">
-						<span class=" editor-char  ">검투사의 가죽 장화</span></span></div></div>
-	<td class="translated-segment-grid">
-		<div class="editor-cell-container focused" style="max-height: 746px;">
-			<div class="editor-cell">
-				<div class="asset-container">
-					<div class="editor-cursor hidden" style="width: 0px; height: 15px; left: 0px; top: 0px;"></div></div>
-					<div class="content-container-wrapper">
-						<!-- 有两种可能性, 空的没有<span class="editor-char" /> -->
-						<span class="content-container"></span></div></div></div>
-						<span class="content-container"><span class=" editor-char  ">112341</span></span>
+    <td class="order">1.</td>
+    <td class="original-segment-grid">
+        <div class="editor-cell-container" style="max-height:534px">
+            <div class="editor-cell">
+                <div class="asset-container"></div>
+                <div class="content-container-wrapper">
+                    <span class="content-container">
+                        <span class=" editor-char  ">검투사의 가죽 장화</span></span></div></div>
+    <td class="translated-segment-grid">
+        <div class="editor-cell-container focused" style="max-height: 746px;">
+            <div class="editor-cell">
+                <div class="asset-container">
+                    <div class="editor-cursor hidden" style="width: 0px; height: 15px; left: 0px; top: 0px;"></div></div>
+                    <div class="content-container-wrapper">
+                        <!-- 有两种可能性, 空的没有<span class="editor-char" /> -->
+                        <span class="content-container"></span></div></div></div>
+                        <span class="content-container"><span class=" editor-char  ">112341</span></span>
 
 
 页面侦听wheel事件
 
 如果array还有有效内容, 
-	填充(#gridTableBody tr[data-id=?] .translated-segment-grid span.content-container)
-	下的span.editor-char
+    填充(#gridTableBody tr[data-id=?] .translated-segment-grid span.content-container)
+    下的span.editor-char
 */
 
 (function() {
@@ -53,77 +53,81 @@ ng = ui.find('button.ng')
 ta = ui.find('textarea')
 
 ok.on('click', function() {
-	str = ta.val();
-	map = stringToMap(str);
-	ta.remove();
-	ok.remove();
-	msg.text("마우스 링을 굴러 보세요. 취소할 수도 있습니다.");
-	$('#gridTableBody').on('wheel', doFill);
-	ui.css({width: 200, height: 200, top: 0, right: 10 });
+    str = ta.val();
+    map = stringToMap(str);
+    ta.remove();
+    ok.remove();
+    msg.text("마우스 링을 굴러 보세요. 취소할 수도 있습니다.");
+    $('#gridTableBody').on('keydown', doFill);
+    ui.css({width: 200, height: 200, top: 0, right: 10 });
 });
 
 ng = ng.on("click", function() {
-	ui.remove();
-	$('#gridTableBody').off('wheel', doFill);
+    ui.remove();
+    $('#gridTableBody').off('keydown', doFill);
 });
 
 function doFill(e) {
-	msg.textContent='남은 수: '+map.size+'개.';
-	if(map.size) {
-		let rows=getRows();
-		rows.forEach(tr=>{
-			let id=tr.getAttribute('data-id');
-			if(map.has(id)){
-				console.log(id);
-				fill(id, map.get(id));
-				map.delete(id);
-			}
-		});
-	}else{
-		msg.text("입력 완료.").css({
-			background: "rgba(0,255,0,0.2)"
-		});
-		$(window).off("wheel", doFill);
-		setTimeout(function() { ui.remove(); },1000);
-	}
+    msg.textContent='남은 수: '+map.size+'개.';
+    if(map.size) {
+
+        let active=document.querySelector('#gridTableBody tr.active');
+        if(active){
+            let id=active.getAttribute('data-id');
+            if(map.has(id)){
+                console.log(id, map.get(id));
+                let input=document.querySelector('#editorHiddenInput');
+                if(input){
+                    input.value=map.get(id);
+                    map.delete(id);
+                }
+            }     
+        }
+    }else{
+        msg.text("입력 완료.").css({
+            background: "rgba(0,255,0,0.2)"
+        });
+        $(window).off("keydown", doFill);
+        setTimeout(function() { ui.remove(); },1000);
+    }
 }
 
 function stringToMap(str){
-	let map=new Map();
-	str.split('\n').forEach((v,i)=>{
-		v=v.trim();
-		if(v.length>0) map.set(String(i), v);
-	});
-	return map;
+    let map=new Map();
+    str.split('\n').forEach((v,i)=>{
+        v=v.trim();
+        if(v.length>0) map.set(String(i), v);
+    });
+    return map;
 }
 
-function fill(id, value) {
-	let t,c,i;
-	t=document.querySelector('#gridTableBody tr[data-id="'+id+'"] .translated-segment-grid span.content-container');
-	c=t.querySelector('span.editor-char');
-	if(c===null) {
-		c=document.createElement('span');
-		x.classList('editor-char');
-		t.appendChild(c);
-	}
-	c.textContent=value;
-	c.style.background='#ccc';
-	
-	let e=new Event('keydown');
-	e.keyCode=13;
-	e.ctrlKey=true;
-	e.shiftKey=false;
-	e.altKey=false;
-	e.metaKey=false;
-	t.dispatchEvent(e);
-}
+// function fill(id, value) {
+//     let t,c,i;
+//     t=document.querySelector('#gridTableBody tr[data-id="'+id+'"] .translated-segment-grid span.content-container');
+//     c=t.querySelector('span.editor-char');
+//     if(c===null) {
+//         c=document.createElement('span');
+//         x.classList('editor-char');
+//         t.appendChild(c);
+//     }
+//     c.textContent=value;
+//     c.style.background='#ccc';
+    
+//     let e=new Event('keydown');
+//     e.keyCode=13;
+//     e.ctrlKey=true;
+//     e.shiftKey=false;
+//     e.altKey=false;
+//     e.metaKey=false;
+//     t.dispatchEvent(e);
+// }
 
 
-function getRows() {
-	let rows;
-	rows=document.querySelectorAll('#gridTableBody tr[data-id]');
-	return rows;
-}
+// function getRows() {
+//     let rows;
+//     rows=document.querySelectorAll('#gridTableBody tr[data-id]');
+//     return rows;
+// }
 
 
 })();
