@@ -68,7 +68,7 @@ ng = ng.on("click", function() {
 });
 
 function doFill(e) {
-	msn.textContent='남은 수: '+map.size+'개.';
+	msg.textContent='남은 수: '+map.size+'개.';
 	if(map.size) {
 		let rows=getRows();
 		rows.forEach(tr=>{
@@ -79,18 +79,12 @@ function doFill(e) {
 				map.delete(id);
 			}
 		});
-		
-		msg.text('남은 인텍스:'+map.keys());
-		if (map.size === 0) {
-			msg.text("입력 완료.").css({
-				background: "rgba(0,255,0,0.2)"
-			});
-			$(window).off("wheel", doFill);
-			setTimeout(function() {
-				ui.remove();
-			},
-			1000);
-		}
+	}else{
+		msg.text("입력 완료.").css({
+			background: "rgba(0,255,0,0.2)"
+		});
+		$(window).off("wheel", doFill);
+		setTimeout(function() { ui.remove(); },1000);
 	}
 }
 
