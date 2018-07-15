@@ -60,13 +60,13 @@ ok.on('click', function() {
     ta.remove();
     ok.remove();
     msg.text("마우스 링을 굴러 보세요. 취소할 수도 있습니다.");
-    $(window).on('keydown', doFill);
+    $(window).on('keyup', doFill);
     ui.css({width: 200, height: 200, top: 0, right: 10 });
 });
 
 ng = ng.on("click", function() {
     ui.remove();
-    input.addEventListener('keydown', doFill);
+    input.addEventListener('keyup', doFill);
 });
 
 function doFill(e) {
@@ -91,7 +91,7 @@ function doFill(e) {
             msg.text("입력 완료.").css({
                 background: "rgba(0,255,0,0.2)"
             });
-            $(window).off("keydown", doFill);
+            $(window).off("keyup", doFill);
             setTimeout(function() { ui.remove(); },1000);
         }
     }
@@ -118,7 +118,7 @@ function stringToMap(str){
 //     c.textContent=value;
 //     c.style.background='#ccc';
     
-//     let e=new Event('keydown');
+//     let e=new Event('keyup');
 //     e.keyCode=13;
 //     e.ctrlKey=true;
 //     e.shiftKey=false;
