@@ -1,86 +1,125 @@
-javascript: (function() {
-    var str;
-    var arr;
-    var target;
-    let replace=false;
-    var div = $("<div>").css({
-        position: "fixed",
-        top: 0,
-        width: "40%",
-        right: 10,
-        bottom: 10,
-        border: "2px solid blue",
-        padding: 24,
-        background: "rgba(0,0,0,0.5)",
-        zIndex: 99999999999
-    }).appendTo("body");
-    var msg = $("<h5>").text("붙여넣는 기능").css({
-        "background": "rgba(255,255,255,0.9)",
-        "font-weight": "bold"
-    }).appendTo(div);
-    var ok = $("<button>").text("확인").on("click",
-    function() {
-        str = ta.val().trim();
-        arr = str.split("\n");
-        ta.remove();
-        ok.remove();
+// DOMAttrModified
+// DOMAttributeNameChanged
+// DOMCharacterDataModified
+// DOMElementNameChanged
+// DOMNodeInserted
+// DOMNodeInsertedIntoDocument
+// DOMNodeRemoved
+// DOMNodeRemovedFromDocument
+// DOMSubtreeModified
+/*
+<tbody id="gridTableBody">
+<tr  data-id="0"  class style="display:table-row">
+	<td class="order">1.</td>
+	<td class="original-segment-grid">
+		<div class="editor-cell-container" style="max-height:534px">
+			<div class="editor-cell">
+				<div class="asset-container"></div>
+				<div class="content-container-wrapper">
+					<span class="content-container">
+						<span class=" editor-char  ">검투사의 가죽 장화</span></span></div></div>
+	<td class="translated-segment-grid">
+		<div class="editor-cell-container focused" style="max-height: 746px;">
+			<div class="editor-cell">
+				<div class="asset-container">
+					<div class="editor-cursor hidden" style="width: 0px; height: 15px; left: 0px; top: 0px;"></div></div>
+					<div class="content-container-wrapper">
+						<!-- 有两种可能性, 空的没有<span class="editor-char" /> -->
+						<span class="content-container"></span></div></div></div>
+						<span class="content-container"><span class=" editor-char  ">112341</span></span>
 
-        msg.text("마우스 굴려서 입력").appendTo(div);
-        $(document).on("DOMSubtreeModified", doWork);
-        div.css({
-            width: 200,
-            height: 200,
-            top: 0,
-            right: 10
-        })
-    }).appendTo(div).css({zIndex:99999,background:'yellow'});
-    var ng = $("<button>").text("취소").on("click",
-    function() {
-        div.remove();
-        $(document).off("keydown", doWork)
-    }).appendTo(div).css({zIndex:99999,background:'yellow'});
-    div.append("<br>");
-    var ta = $("<textarea>").appendTo(div).css({
-        width: "100%",
-        height: window.innerHeight / 2
-    });
 
-    let o=$('#gridTableBody');
+页面侦听wheel事件
 
-    function doWork(e) {
-        let length=arr.length;
+如果array还有有效内容, 
+	填充(#gridTableBody tr[data-id=?] .translated-segment-grid span.content-container)
+	下的span.editor-char
+*/
 
-        o.find('tr[data-id]').each((i,e)=>{
-            let id=$(e).attr('data-id');
-            let source=$('.original-segment-grid .editor-cell',e)
-            let target=$('.translated-segment-grid .editor-cell',e)
+(function() {
 
-            console.log(id)
-            if(arr[id]!==undefined && arr[id].length>0) {
+let str, map, target, div, msg, ok, ng, ta, ui;
 
-                if(target.text().length>0){
-                    if(replace) {
-                        target.text(arr[id]);
-                        arr[id]=undefined;
-                    }
-                }
+ui = $(`<div style="position:fixed; top:0; right:10px; width:40%; bottom:10px; border:2px solid blue; padding:24px; background:#0007; z-index: 99999;">
+<h5 class="message" style="background:#fffc; font-weight:bold;">memoQ 위한 붙여넣는 기능입니다.</h5>
+<button class="ok" style="text-align:center;background:#ff0">확인</button>
+<button class="ng" style="text-align:center;background:#ff0">취소</button>
+<textarea style="width:100%; height:100%;"></textarea>
+</div>`).appendTo('body');
 
-            }
-        });
-        var v = arr.shift();
-        if (v) {
-            $(e.target).html($("<p>").text(v));
-            msg.text(length + "개 남음");
-            if (length === 0) {
-                msg.text("입력 완료").appendTo(div).css({
-                    background: "rgba(0,255,0,0.2)"
-                });
-                $(document).off("keydown", doWork);
-                setTimeout(function() {
-                    div.remove()
-                },
-                1000)
-            }
-        }
-    }
+msg = ui.find('h5.message');
+ok = ui.find('button.ok')
+ng = ui.find('button.ng')
+ta = ui.find('textarea')
+
+ok.on('click', function() {
+	str = ta.val();
+	map = stringToMap(str);
+	ta.remove();
+	ok.remove();
+	msg.text("마우스 링을 굴러 보세요. 취소할 수도 있습니다.");
+	$(window).on("wheel", doFill);
+	ui.css({width: 200, height: 200, top: 0, right: 10 });
+});
+
+ng = ng.on("click", function() {
+	ui.remove();
+	$(window).off("wheel", doFill);
+});
+
+function doFill(e) {
+	console.log(map.size)
+	if(map.size) {
+		let rows=getRows();
+		rows.forEach(tr=>{
+			let id=tr.getAttribute('data-id');
+			if(map.has(id)){
+				fill(id, map.get(id));
+				map.delete(id);
+			}
+		});
+		
+		msg.text('남은 인텍스:'+map.keys());
+		if (map.size === 0) {
+			msg.text("입력 완료.").css({
+				background: "rgba(0,255,0,0.2)"
+			});
+			$(window).off("wheel", doFill);
+			setTimeout(function() {
+				ui.remove();
+			},
+			1000);
+		}
+	}
+}
+
+function stringToMap(str){
+	let map=new Map();
+	str.split('\n').forEach((v,i)=>{
+		v=v.trim();
+		if(v.length>0) map.set(String(i), v);
+	});
+	return map;
+}
+
+function fill(id, value) {
+	let t,c,i;
+	t=document.querySelector('#gridTableBody tr[data-id="'+id+'"] .translated-segment-grid span.content-container');
+	c=t.querySelector('span.editor-char');
+	if(c===null) {
+		c=document.createElement('span');
+		x.classList('editor-char');
+		t.appendChild(c);
+	}
+	c.textContent=value;
+}
+
+
+function getRows() {
+	let rows;
+	rows=document.querySelectorAll('#gridTableBody tr[data-id]');
+	return rows;
+}
+
+
 })();
