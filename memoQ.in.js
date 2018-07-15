@@ -38,7 +38,9 @@
 
 (function() {
 
-let str, map, target, div, msg, ok, ng, ta, ui;
+let str, map, target, div, msg, ok, ng, ta, ui, input;
+
+input=document.querySelector('#editorHiddenInput');
 
 ui = $(`<div style="position:fixed; top:0; right:10px; width:40%; bottom:10px; border:2px solid blue; padding:24px; background:#0007; z-index: 99999;">
 <h5 class="message" style="background:#fffc; font-weight:bold;">memoQ 위한 붙여넣는 기능입니다.</h5>
@@ -64,32 +66,32 @@ ok.on('click', function() {
 
 ng = ng.on("click", function() {
     ui.remove();
-    $(window).off('keydown', doFill);
+    input.addEventListener('keydown', doFill);
 });
 
 function doFill(e) {
-    msg.textContent='남은 수: '+map.size+'개.';
-    if(map.size) {
-
-        let active=document.querySelector('#gridTableBody tr.active');
-        if(active){
-            let id=active.getAttribute('data-id');
-            if(map.has(id)){
-                console.log(id, map.get(id));
-                let input=document.querySelector('#editorHiddenInput');
-                if(input){
-                    input.value=map.get(id);
-                    map.delete(id);
-                }
-            }     
+    if(e.keyCode===40||e.keyCode===38){
+        msg.textContent='남은 수: '+map.size+'개.';
+        if(map.size) {
+            let active=document.querySelector('#gridTableBody tr.active');
+            if(active){
+                let id=active.getAttribute('data-id');
+                if(map.has(id)){
+                    console.log(id, map.get(id));
+                    if(input){
+                        input.value=map.get(id);
+                        map.delete(id);
+                    }
+                }     
+            }
+            console.log(active);
+        }else{
+            msg.text("입력 완료.").css({
+                background: "rgba(0,255,0,0.2)"
+            });
+            $(window).off("keydown", doFill);
+            setTimeout(function() { ui.remove(); },1000);
         }
-        console.log(active);
-    }else{
-        msg.text("입력 완료.").css({
-            background: "rgba(0,255,0,0.2)"
-        });
-        $(window).off("keydown", doFill);
-        setTimeout(function() { ui.remove(); },1000);
     }
 }
 
@@ -123,6 +125,8 @@ function stringToMap(str){
 //     t.dispatchEvent(e);
 // }
 
+
+// $(window).on('keydow', e=>console.log(e.type))
 
 // function getRows() {
 //     let rows;
