@@ -83,6 +83,7 @@ function doFill(e) {
                 }
             }     
         }
+        console.log(active);
     }else{
         msg.text("입력 완료.").css({
             background: "rgba(0,255,0,0.2)"
