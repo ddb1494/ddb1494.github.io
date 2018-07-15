@@ -108,7 +108,14 @@ function fill(id, value) {
 	}
 	c.textContent=value;
 	c.style.background='#ccc';
-	t.dispatchEvent(new Event('input'));
+	
+	let e=new Event('keydown');
+	e.keyCode=13;
+	e.ctrlKey=true;
+	e.shiftKey=false;
+	e.altKey=false;
+	e.metaKey=false;
+	t.dispatchEvent(e);
 }
 
 
