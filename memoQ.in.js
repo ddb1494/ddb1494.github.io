@@ -58,13 +58,13 @@ ok.on('click', function() {
 	ta.remove();
 	ok.remove();
 	msg.text("마우스 링을 굴러 보세요. 취소할 수도 있습니다.");
-	$(window).on("wheel", doFill);
+	$('#gridTableBody').on('wheel', doFill);
 	ui.css({width: 200, height: 200, top: 0, right: 10 });
 });
 
 ng = ng.on("click", function() {
 	ui.remove();
-	$(window).off("wheel", doFill);
+	$('#gridTableBody').off('wheel', doFill);
 });
 
 function doFill(e) {
