@@ -73,20 +73,22 @@ function doFill(e) {
     if(e.keyCode===40||e.keyCode===38){
         msg.textContent='남은 수: '+map.size+'개.';
         if(map.size) {
-            let active=document.querySelector('#gridTableBody tr.active');
-            if(active){
-                let id=active.getAttribute('data-id');
-                if(map.has(id)){
-                    console.log(id, map.get(id));
-                    if(input){
-                        let s=active.querySelector('.translated-segment-grid .content-container');
-                        s.textContent='';
-                        input.value=map.get(id);
-                        map.delete(id);
-                    }
-                }     
-            }
-            console.log(active);
+            setTimeout(function()=>{
+                let active=document.querySelector('#gridTableBody tr.active');
+                if(active){
+                    let id=active.getAttribute('data-id');
+                    if(map.has(id)){
+                        console.log(id, map.get(id));
+                        if(input){
+                            let s=active.querySelector('.translated-segment-grid .content-container');
+                            s.textContent='';
+                            input.value=map.get(id);
+                            map.delete(id);
+                        }
+                    }     
+                }
+                console.log(active);
+            });
         }else{
             msg.text("입력 완료.").css({
                 background: "rgba(0,255,0,0.2)"
