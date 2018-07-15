@@ -81,6 +81,7 @@ function doFill(e) {
                         console.log(id, map.get(id));
                         if(input){
                             let s=active.querySelector('.translated-segment-grid .content-container');
+                            console.log(s);
                             s.textContent='';
                             input.value=map.get(id);
                             map.delete(id);
