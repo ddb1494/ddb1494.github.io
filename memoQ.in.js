@@ -73,7 +73,7 @@ function doFill(e) {
     if(e.keyCode===40||e.keyCode===38){
         msg.textContent='남은 수: '+map.size+'개.';
         if(map.size) {
-            setTimeout(function()=>{
+            setTimeout(function(){
                 let active=document.querySelector('#gridTableBody tr.active');
                 if(active){
                     let id=active.getAttribute('data-id');
