@@ -44,7 +44,7 @@ ui = $(`<div style="position:fixed; top:0; right:10px; width:40%; bottom:10px; b
 <h5 class="message" style="background:#fffc; font-weight:bold;">memoQ 위한 붙여넣는 기능입니다.</h5>
 <button class="ok" style="text-align:center;background:#ff0">확인</button>
 <button class="ng" style="text-align:center;background:#ff0">취소</button>
-<textarea style="width:100%; height:100%;"></textarea>
+<textarea style="width:100%; height:80%;"></textarea>
 </div>`).appendTo('body');
 
 msg = ui.find('h5.message');
@@ -68,12 +68,13 @@ ng = ng.on("click", function() {
 });
 
 function doFill(e) {
-	console.log(map.size)
+	msn.textContent='남은 수: '+map.size+'개.';
 	if(map.size) {
 		let rows=getRows();
 		rows.forEach(tr=>{
 			let id=tr.getAttribute('data-id');
 			if(map.has(id)){
+				console.log(id);
 				fill(id, map.get(id));
 				map.delete(id);
 			}
