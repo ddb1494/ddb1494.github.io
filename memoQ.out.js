@@ -24,7 +24,16 @@ function onCollect(e){
             sourceChars[k]=v;
             console.log(k,v);
             
-            sourceChars2[k]=$(v).text();
+            let v2='';
+            $(v).find('span').each((i,e)=>{
+                let s
+                s=$(e).unwrap();
+                if($(e).is('.tag')){
+                    s='<'+s+'>'
+                }
+                v2+=s;
+            });
+            sourceChars2[k]=v2;
         }
     });
 
