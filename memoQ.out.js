@@ -16,7 +16,7 @@ function onCollect(e){
 
     o.find('.original-segment-grid').each(function(i,td){
         let k=$(td).parent().attr('data-id')
-        let v=$(td).find('.editor-char').text()
+        let v=$(td).find('.content-container').html().replace(/[\r\n]/g,'')
         
         if(sourceChars[k]===undefined) {
             sourceChars[k]=v;
@@ -26,7 +26,7 @@ function onCollect(e){
 
     o.find('.translated-segment-grid').each(function(i,td){
         let k=$(td).parent().attr('data-id')
-        let v=$(td).find('.editor-char').text()
+        let v=$(td).find('.content-container').html().replace(/[\r\n]/g,'')
         
         if(targetChars[k]===undefined) {
             targetChars[k]=v;
