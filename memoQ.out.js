@@ -8,53 +8,58 @@ window.targetChars=targetChars
 
 let o = $('#gridTableBody');
 
-o.on('DOMSubtreeModified',onCollect);
+o.on('wheel',onCollect);
 
 function onCollect(e){
-	o.find('.original-segment-grid').each(function(i,td){
-		let k=$(td).parent().attr('data-id')
-		let v=$(td).find('.editor-char').text()
-		
-		if(sourceChars[k]===undefined) {
-			sourceChars[k]=v;
-			console.log(k,v);
-		}
-	});
 
-	o.find('.translated-segment-grid').each(function(i,td){
-		let k=$(td).parent().attr('data-id')
-		let v=$(td).find('.editor-char').text()
-		
-		if(targetChars[k]===undefined) {
-			targetChars[k]=v;
-			console.log(k,v);
-		}
-	});
+    button.text(sourceChars.length + '/' + targetChars.length);
+
+    o.find('.original-segment-grid').each(function(i,td){
+        let k=$(td).parent().attr('data-id')
+        let v=$(td).find('.editor-char').text()
+        
+        if(sourceChars[k]===undefined) {
+            sourceChars[k]=v;
+            console.log(k,v);
+        }
+    });
+
+    o.find('.translated-segment-grid').each(function(i,td){
+        let k=$(td).parent().attr('data-id')
+        let v=$(td).find('.editor-char').text()
+        
+        if(targetChars[k]===undefined) {
+            targetChars[k]=v;
+            console.log(k,v);
+        }
+    });
 
 
 }
 
 
-$('<button>').appendTo('body')
+let button=$('<button>').appendTo('body');
+
+button
 .css({position:'fixed',right:0,top:0,padding:'2em',background:'#f00',color:'#ff0'})
 .one('click',function(){
-	// clearInterval(interval);
-	o.off('DOMSubtreeModified');
-	let div=$('<div>').appendTo('body').css({
-		posision:'fixed',left:0,top:0,
-		    width: '100%',
-			height: '400px',
-			position: 'fixed',
-			top: 0,
-			left: 0,
-			zIndex: 999,
-			background: '#000',
-			color: '#000',
-			textAlign: 'center'
-	});
-	$(this).appendTo(div).one('click',e=>{div.remove();this.remove();});
-	let source=$('<textarea>').val(sourceChars.join('\n')).appendTo(div).attr('title',sourceChars.length).css('height','100%');
-	let target=$('<textarea>').val(targetChars.join('\n')).appendTo(div).attr('title',targetChars.length).css('height','100%');
+    // clearInterval(interval);
+    o.off('wheel');
+    let div=$('<div>').appendTo('body').css({
+        posision:'fixed',left:0,top:0,
+            width: '100%',
+            height: '400px',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            zIndex: 999,
+            background: '#000',
+            color: '#000',
+            textAlign: 'center'
+    });
+    $(this).appendTo(div).one('click',e=>{div.remove();this.remove();});
+    let source=$('<textarea>').val(sourceChars.join('\n')).appendTo(div).attr('title',sourceChars.length).css('height','100%');
+    let target=$('<textarea>').val(targetChars.join('\n')).appendTo(div).attr('title',targetChars.length).css('height','100%');
 }).text('stop');
 
 
@@ -64,5 +69,5 @@ $('<button>').appendTo('body')
 
 
 // $('#gridTableBody').on('DOMSubtreeModified',(e)=>{
-// 	console.log(e);
+//  console.log(e);
 // });
