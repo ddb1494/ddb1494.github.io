@@ -33,16 +33,16 @@ ng = ng.on("click", function() {
 
 function doFill(e) {
     let keyCode=e.keyCode;
-    let fName='';
+    // let fName='';
     if(keyCode===40||keyCode===38){
         // previousElementSibling
         // nextElementSibling
 
-        fName= (keyCode===40?'next':'previous')+'ElementSibling';
+        // fName= (keyCode===40?'next':'previous')+'ElementSibling';
 
         msg.textContent='남은 수: '+map.size+'개.';
         if(map.size) {
-            // setTimeout(()=>{
+            setTimeout(()=>{
                 let active=document.querySelector('#gridTableBody tr.active');
                 // active=active[fName]
                 if(active){
@@ -58,7 +58,7 @@ function doFill(e) {
                         }
                     }     
                 }
-            // });
+            });
         }else{
             msg.text("입력 완료.").css({
                 background: "rgba(0,255,0,0.2)"
