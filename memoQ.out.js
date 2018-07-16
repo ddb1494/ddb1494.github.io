@@ -1,8 +1,10 @@
 (function (){
 
+let sourceChars2=[];
 let sourceChars=[];
 let targetChars=[];
 
+window.sourceChars2=sourceChars2
 window.sourceChars=sourceChars
 window.targetChars=targetChars
 
@@ -21,6 +23,8 @@ function onCollect(e){
         if(sourceChars[k]===undefined) {
             sourceChars[k]=v;
             console.log(k,v);
+            
+            sourceChars2[k]=$(v).text();
         }
     });
 
@@ -58,6 +62,7 @@ button
             textAlign: 'center'
     });
     $(this).appendTo(div).one('click',e=>{div.remove();this.remove();});
+    let source2=$('<textarea>').val(sourceChars2.join('\n')).appendTo(div).attr('title',sourceChars2.length).css('height','100%');
     let source=$('<textarea>').val(sourceChars.join('\n')).appendTo(div).attr('title',sourceChars.length).css('height','100%');
     let target=$('<textarea>').val(targetChars.join('\n')).appendTo(div).attr('title',targetChars.length).css('height','100%');
 }).text('stop');
