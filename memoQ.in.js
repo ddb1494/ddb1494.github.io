@@ -40,7 +40,7 @@ function doFill(e) {
 
         // fName= (keyCode===40?'next':'previous')+'ElementSibling';
 
-        msg.textContent='남은 수: '+map.size+'개.';
+        msg.text('남은 수: '+map.size+'개.');
         if(map.size) {
             setTimeout(()=>{
                 let active=document.querySelector('#gridTableBody tr.active');
@@ -52,8 +52,8 @@ function doFill(e) {
                         if(input){
                             let s=active.querySelector('.translated-segment-grid .content-container');
                             console.log(s);
-                            s.textContent='';
-                            input.value=map.get(id);
+                            s.innerHTML=map.get(id);
+//                             input.value='';
                             map.delete(id);
                         }
                     }     
