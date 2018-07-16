@@ -44,7 +44,7 @@ function doFill(e) {
         if(map.size) {
             // setTimeout(()=>{
                 let active=document.querySelector('#gridTableBody tr.active');
-                active=active[fName]
+                // active=active[fName]
                 if(active){
                     let id=active.getAttribute('data-id');
                     if(map.has(id)){
@@ -58,7 +58,6 @@ function doFill(e) {
                         }
                     }     
                 }
-                console.log(active);
             // });
         }else{
             msg.text("입력 완료.").css({
