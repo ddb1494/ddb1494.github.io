@@ -52,8 +52,8 @@ function doFill(e) {
                         if(input){
                             let s=active.querySelector('.translated-segment-grid .content-container');
                             console.log(s);
-                            s.innerHTML=map.get(id);
-//                             input.value='';
+                            s.innerHTML='';
+                            input.value=map.get(id);
                             map.delete(id);
                         }
                     }     
