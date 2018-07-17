@@ -46,13 +46,14 @@ ui = $(`<div style="position:fixed; top:0; right:10px; width:40%; bottom:10px; b
 <h5 class="message" style="background:#fffc; font-weight:bold;">memoQ 위한 붙여넣는 기능입니다.</h5>
 <button class="ok" style="text-align:center;background:#ff0">확인</button>
 <button class="ng" style="text-align:center;background:#ff0">취소</button>
-<textarea style="width:100%; height:80%;"></textarea>
+<textarea style="width:100%; height:80%;"></textarea><textarea id="ao-clip" style="display:hidden"></textarea>
 </div>`).appendTo('body');
 
 msg = ui.find('h5.message');
 ok = ui.find('button.ok')
 ng = ui.find('button.ng')
 ta = ui.find('textarea')
+clip=ui.find('ao-clip')
 
 ok.on('click', function() {
     str = ta.val();
@@ -83,7 +84,10 @@ function doFill(e) {
                             let s=active.querySelector('.translated-segment-grid .content-container');
                             console.log(s);
                             s.textContent='';
-                            input.value=map.get(id);
+                            clip.value=map.get(id);
+                            clip.select();
+                            document.execCommand('copy');
+                            $(input).focus().trigger({type:'keydown',keyCode:86,witch:86,key:'v',code:'KeyV',ctrlKey:true});
                             map.delete(id);
                         }
                     }     
