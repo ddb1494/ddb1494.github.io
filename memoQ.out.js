@@ -60,7 +60,7 @@
             let success=data.Success;
             if(success && rows){
                let res=data.Value.Rows;
-                res=rows.map(row=>{
+                res=res.map(row=>{
                     return row.Row.SourceSegment.EditorString;
                 })
             }
