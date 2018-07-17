@@ -67,11 +67,11 @@
                 
                 let textarea=$('<textarea>');
                 textarea.one('contextmenu',()=>{
-                   console.log(this);
-//                    this.remove();
+                   textarea.remove();
                 }).appendTo("body")
-                .css({position:'fixed',top:0,left:0,height:500,zIndex:999})
+                .css({position:'fixed',top:0,left:0,zIndex:999,width:'33%',height:'100%',color:'#fff',background:'#333'})
                 .val(res.join('\n'))
+                .attr('title','Click mouse right button to close.')
             }
         });
     }
