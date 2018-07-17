@@ -64,6 +64,7 @@
                     return row.Row.SourceSegment.EditorString;
                 })
                 $('<textarea>').appendTo("body").css({position:'fixed',top:0,left:0,height:500,zIndex:999}).val(res.join('\n')).one('contextmenu',()=>{
+                   console.log(this);
                    this.remove();
                 });
             }
