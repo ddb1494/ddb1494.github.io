@@ -72,6 +72,9 @@
                 .css({position:'fixed',top:0,left:0,zIndex:999,width:'33%',height:'100%',color:'#fff',background:'#333'})
                 .val(res.join('\n'))
                 .attr('title','Click mouse right button to close.')
+                .on('dblclick',()=>{
+                   textarea.css({height: textarea.height()?0:'100%', width:textarea.width()?0:'33%'});
+                })
             }
         });
     }
