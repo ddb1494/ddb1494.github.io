@@ -1,4 +1,5 @@
 {
+   console.log('loaded',this);
 
    function createArrayRange(start,end){
         if(end===undefined) {
