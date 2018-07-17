@@ -84,11 +84,12 @@ function doFill(e) {
                             let s=active.querySelector('.translated-segment-grid .content-container');
                             console.log(s);
                             s.textContent='';
-                            clip.value=map.get(id);
-                            clip.select();
-                            document.execCommand('copy');
-                            $(input).focus().trigger({type:'keydown',keyCode:86,witch:86,key:'v',code:'KeyV',ctrlKey:true});
-                            document.execCommand('paste');
+                            input.value=map.get(id);
+//                             clip.value=map.get(id);
+//                             clip.select();
+//                             document.execCommand('copy');
+//                             $(input).focus().trigger({type:'keydown',keyCode:86,witch:86,key:'v',code:'KeyV',ctrlKey:true});
+//                             document.execCommand('paste');
                             map.delete(id);
                         }
                     }     
