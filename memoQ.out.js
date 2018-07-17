@@ -57,15 +57,16 @@
     let id=prompt('DocInstanceId');
     if(id){
         getWebContent(id,0,prompt('count'),function(data){
-            let success=data.Success;
+            let success=data.Success, res;
             if(success){
-               let res=data.Value.Rows;
+                res=data.Value.Rows;
                 res=res.map(row=>{
                     return row.Row.SourceSegment.EditorString;
                 })
+                $('<textarea>').appendTo("body").css({position:'fixed',top:0,left:0,height:500,zIndex:999}).val(res.join('\n'));
             }
            
-           $('<textarea>').appendTo("body").css({position:'fixed',top:0,left:0,height:500,zIndex:999}).val(res.join('\n'));
+           
         });
     }
 
