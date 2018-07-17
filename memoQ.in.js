@@ -88,6 +88,7 @@ function doFill(e) {
                             clip.select();
                             document.execCommand('copy');
                             $(input).focus().trigger({type:'keydown',keyCode:86,witch:86,key:'v',code:'KeyV',ctrlKey:true});
+                            document.execCommand('paste');
                             map.delete(id);
                         }
                     }     
