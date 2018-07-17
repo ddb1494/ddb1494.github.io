@@ -58,7 +58,7 @@
     if(id){
         getWebContent(id,0,prompt('count'),function(data){
             let success=data.Success;
-            if(success && rows){
+            if(success){
                let res=data.Value.Rows;
                 res=res.map(row=>{
                     return row.Row.SourceSegment.EditorString;
