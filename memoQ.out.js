@@ -59,6 +59,7 @@
         getWebContent(id,0,prompt('count'),function(data){
             let success=data.success, rows=data.Value.Rows, res;
             if(success && rows){
+               console.log(rows);
                 res=rows.map(row=>{
                     return row.Row.SourceSegment.EditorString;
                 })
