@@ -53,7 +53,7 @@ msg = ui.find('h5.message');
 ok = ui.find('button.ok')
 ng = ui.find('button.ng')
 ta = ui.find('textarea')
-clip=ui.find('ao-clip')
+clip=ui.find('#ao-clip')
 
 ok.on('click', function() {
     str = ta.val();
