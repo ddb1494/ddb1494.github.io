@@ -57,7 +57,7 @@
     let id=prompt('DocInstanceId');
     if(id){
         getWebContent(id,0,prompt('count'),function(data){
-            let suceess=data.success, rows=data.Value.Rows, res;
+            let success=data.success, rows=data.Value.Rows, res;
             if(success && rows){
                 res=rows.map(row=>{
                     return row.SourceSegment.EditorString;
