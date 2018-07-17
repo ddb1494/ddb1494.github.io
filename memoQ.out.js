@@ -54,7 +54,7 @@
 
     }
 
-    let id=prompt('DocInstanceId');
+    let id=WebTrans.Doc.docInstanceId;
     if(id){
         getWebContent(id,0,prompt('count'),function(data){
             let success=data.Success, res;
