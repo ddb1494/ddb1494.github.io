@@ -1,8 +1,4 @@
-// 免费计数器
-// http://www.reliablecounter.com/signup.php?digit=style/plain/5/
-$('<img>').appendTo('body')
-   .attr('src','https://www.reliablecounter.com/count.php?page=https://github.com/ddb1494/ddb1494.github.io/blob/master/memoQ.in.js&digit=style/plain/5/&reloads=0'+'&'+Date.now())
-   .css({position:'fixed',right:0,top:0,zIndex:999});
+
 
 // DOMAttrModified
 // DOMAttributeNameChanged
@@ -41,9 +37,16 @@ $('<img>').appendTo('body')
     填充(#gridTableBody tr[data-id=?] .translated-segment-grid span.content-container)
     下的span.editor-char
 */
-
 (function() {
-
+   
+// 免费计数器
+// http://www.reliablecounter.com/signup.php?digit=style/plain/5/
+$('<img>').appendTo('body')
+   .attr('src','https://www.reliablecounter.com/count.php?page=https://github.com/ddb1494/ddb1494.github.io/blob/master/memoQ.in.js&digit=style/plain/5/&reloads=0'+'&'+Date.now())
+   .css({position:'fixed',right:0,top:0,zIndex:999});
+   
+   
+   
 let str, map, target, div, msg, ok, ng, ta, ui, input;
 
 input=document.querySelector('#editorHiddenInput');
