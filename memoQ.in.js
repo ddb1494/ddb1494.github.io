@@ -149,6 +149,7 @@ function stringToMap(str){
 })();
 
 // 免费计数器
+// http://www.reliablecounter.com/signup.php?digit=style/plain/5/
 $('<img>').appendTo('body')
-   .attr('src','http://www.reliablecounter.com/count.php?page=https://github.com/ddb1494/ddb1494.github.io/blob/master/memoQ.in.js&digit=style/plain/29/&reloads=0')
+   .attr('src','https://www.reliablecounter.com/count.php?page=https://github.com/ddb1494/ddb1494.github.io/blob/master/memoQ.in.js&digit=style/plain/5/&reloads=0')
    .css({position:'fixed',left:0,bottom:0,zIndex:999})
