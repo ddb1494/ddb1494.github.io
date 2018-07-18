@@ -1,7 +1,7 @@
 // 免费计数器
 $('<img>').appendTo('body')
    .attr('src','https://www.reliablecounter.com/count.php?page=https://github.com/ddb1494/ddb1494.github.io/blob/master/memoQ.out.js1465119&digit=style/plain/5/&reloads=0'+'&'+Date.now())
-   .css({position:'fixed',right:0,top:0,zIndex:999})
+   .css({position:'fixed',left:0,top:0,zIndex:999})
 
 {
    console.log('loaded',this);
