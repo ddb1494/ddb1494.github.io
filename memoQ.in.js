@@ -60,7 +60,7 @@ ok.on('click', function() {
     map = stringToMap(str);
     ta.remove();
     ok.remove();
-    msg.text("마우스 링을 굴러 보세요. 취소할 수도 있습니다.");
+    msg.text("첫번째 칸에서 위 방향키를 누르시면 삽입이 시작됩니다. 첫 삽입이 완료되면 아래 방향키로 계속해 주세요.");
     $(window).on('keyup', doFill);
     ui.css({width: 200, height: 200, top: 0, right: 10 });
 });
