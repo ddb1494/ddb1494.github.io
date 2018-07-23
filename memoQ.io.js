@@ -332,10 +332,12 @@ View.prototype.from=function(rows) {
     });
 
     let sources=rows.map(row=>row.source);
+    let targets=rows.map(row=>row.target);
 
     this.content.find('#ao-preview').empty().append(trs);
 
     this.content.find('#ao-edit .source textarea').val(sources.join('\n'));
+    this.content.find('#ao-edit .target textarea').val(targets.join('\n'));
 }
 
 var mq=new MemoQ;
