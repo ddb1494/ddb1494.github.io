@@ -88,6 +88,7 @@ MemoQ.prototype.setRows = function(rows, callback){
 };
 
 function View(memoQ){
+    $('#ao-mask').remove();
     this.memoQ=memoQ;
     let height=screen.availHeight;
     let html=`<div id="ao-mask">
