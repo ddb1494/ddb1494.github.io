@@ -206,12 +206,13 @@ View.prototype.from=function(rows) {
         .append($('<td class="target" contenteditable="plaintext-only">').text(row.target).on('keydown',function(e){
             if(e.keyCode===13){
                 e.preventDefault();
+            }else{
+                setTimeout(()=>{
+                    let tar=$(e.target), text=tar.text(), id=tar.parent().attr('id'), a=ta.val().split('\n');
+                    a[id]=text;
+                    ta.val(a.join('\n'));
+                })
             }
-        }).on('input',function(e){
-            let tar=$(e.target), text=tar.text(), id=tar.parent().attr('id'), a=ta.val().split('\n');
-            a[id]=text;
-            ta.val(a.join('\n'));
-            console.log(e)
         }));
     });
 
