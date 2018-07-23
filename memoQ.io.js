@@ -207,10 +207,10 @@ View.prototype.from=function(rows) {
             if(e.keyCode===13){
                 e.preventDefault();
             }else{
-                let tar=$(e.target), text=tar.text(), id=tar.parent().attr('id'), a=ta.value.split('\n');
+                let tar=$(e.target), text=tar.text(), id=tar.parent().attr('id'), a=ta.val().split('\n');
                 a[id]=text;
-                ta.value=a.join('\n');
-                console.log(id, text);
+                ta.val(a.join('\n'));
+                console.log(id, text, ta);
 
             }
         }));
