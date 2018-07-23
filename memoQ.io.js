@@ -1,85 +1,4 @@
-// {
-//    console.log('loaded',this);
-
-   // function createArrayRange(start,end){
-   //      if(end===undefined) {
-   //          end=start;
-   //          start=0;
-   //      }
-   //      let res=[];
-   //      while(start<=end){
-   //          res.push(start++);
-   //      }
-   //      return res;
-   //  }
-
-//    function getWebContent(id, start, end, callback){
-//         let argLen=arguments.length;
-//         if(argLen===3) {
-//             callback=end;
-//             end=start;
-//             start=0
-//         }else if(argLen!==4){
-//             throw new Error('arguments length.');
-//         }
-
-//         let url=MQ.getAppRootUrl()+'api/TranslationService/GetWebContent';
-//         let data={"DocInstanceId":id,
-//         "RowIndicies":createArrayRange(start,end)}
-
-//         let headers={
-//             'accept':'*/*',
-//             'content-type':'application/json; charset=UTF-8',
-//             // 'x-xsrf-token':document.cookie.match(/X-XSRF-TOKEN=(.+);?/)[1]
-//             'x-xsrf-token':MQ.getCookieValue('X-XSRF-TOKEN')
-//         };
-
-//         function success(data){
-//             if(typeof callback==='function') {
-//                 callback(data);
-//             }else{
-//                 console.log(data);
-//             }
-//         }
-
-//         $.ajax({
-//           type: "POST",
-//           data: JSON.stringify(data),
-//           // dataType: '*/*',
-//           headers, url, success
-//         });
-//         // 实例：
-//         // f(1,5)  // [1,2,3,4,5]
-//         // f(5,7)  // [5,6,7]
-//         // f(3)    // [0,1,2,3]
-
-//     }
-
-//     let id=WebTrans.Doc.docInstanceId;
-//     if(id){
-//         getWebContent(id,0,prompt('count'),function(data){
-//             let success=data.Success, res;
-//             if(success){
-//                 res=data.Value.Rows;
-//                 res=res.map(row=>{
-//                     return row.Row.SourceSegment.EditorString;
-//                 })
-                
-//                 let textarea=$('<textarea>');
-//                 textarea.one('contextmenu',(e)=>{
-//                    textarea.remove();
-//                    e.preventDefault();
-//                 }).appendTo("body")
-//                 .css({position:'fixed',top:0,left:0,zIndex:999,width:'33%',height:'100%',color:'#fff',background:'#333'})
-//                 .val(res.join('\n'))
-//                 .attr('title','Click mouse right button to close.')
-//             }
-//         });
-//     }
-
-    
-
-// }
+{// domain start
 
 
 function MemoQ(){
@@ -167,18 +86,6 @@ MemoQ.prototype.setRows = function(rows, callback){
 
     this.ajax('api/TranslationService/SaveWebRows', data, callback);
 };
-
-
-// test
-// mq=new MemoQ;
-// mq.getRows(e=>console.log(e));
-
-
-// mq.setRows([
-//     {id: 0, source: "[[진] 빛나는 대영주의 부츠 상자", target: "[[真]闪耀的大领主之靴宝箱1"},
-//     {id: 1, source: "[[진] 빛나는 대영주의 코트 상자", target: "[[真]闪耀的大领主大衣宝箱2"},
-// ],data=>console.log(data))
-
 
 function View(memoQ){
     this.memoQ=memoQ;
@@ -289,46 +196,12 @@ function View(memoQ){
     })
 }
 
-// Object.defineProperty(View.prototype, 'targets', {
-//     set(v){
-//         let c=this.content;
-//         c.data('targets', v);
-
-//         let p=c.find('#ao-preview');
-//         v.split('\n').forEach((row,i)=>{
-//             p.append($('<td class="no">').text(row))
-//             p.append($('<td class="target">').text(row))
-//         })
-//     },
-//     get(){
-//         return this.content.data('targets');
-//     }
-// );
-
-// Object.defineProperty(View.prototype, 'sources', {
-//     set(v){
-//         this.content.data('sources', v);
-//     },
-//     get(){
-//         return this.content.data('sources');
-//     }
-// );
-
-// Object.defineProperty(View.prototype, 'data', {
-//     set(v){
-//         this.content.data('data', v);
-//     },
-//     get(){
-//         return this.content.data('data');
-//     }
-// );
-
 View.prototype.from=function(rows) {
     let trs=rows.map(row=>{
         return $('<tr>').attr('id', row.id)
         .append($('<td class="no">').text(row.id+1))
         .append($('<td class="source">').text(row.source))
-        .append($('<td class="target" contenteditable="read-write-plaintext-only">').text(row.target));
+        .append($('<td class="target" contenteditable="plaintext-only">').text(row.target));
     });
 
     let sources=rows.map(row=>row.source);
@@ -345,3 +218,5 @@ var v=new View(mq);
 mq.getRows(e=>{
     v.from(e);
 });
+
+}// domain end
