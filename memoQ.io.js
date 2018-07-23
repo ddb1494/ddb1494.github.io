@@ -281,7 +281,7 @@ function View(memoQ){
             alert('번역문이 전부 비어 있습니다')
         }
     });
-    c.find('#ao-edit .target textarea').on('input', function(e){
+    c.find('#ao-edit .target textarea').on('change', function(e){
         let text=e.target.value;
         text.split('\n').forEach((t,i)=>{
             c.find(`#ao-preview tr[id=${i}] .target`).text(t);
