@@ -198,6 +198,7 @@ function View(memoQ){
 }
 
 View.prototype.from=function(rows) {
+    let c=this.content, ta=c.find('#ao-edit .target textarea');
     let trs=rows.map(row=>{
         return $('<tr>').attr('id', row.id)
         .append($('<td class="no">').text(row.id+1))
@@ -206,8 +207,11 @@ View.prototype.from=function(rows) {
             if(e.keyCode===13){
                 e.preventDefault();
             }else{
-                let tar=$(e.target), text=tar.text(), id=tar.parent().attr('id');
+                let tar=$(e.target), text=tar.text(), id=tar.parent().attr('id'), a=ta.value.split('\n');
+                a[id]=text;
+                ta.value=a.join('\n');
                 console.log(id, text);
+
             }
         }));
     });
