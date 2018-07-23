@@ -205,6 +205,9 @@ View.prototype.from=function(rows) {
         .append($('<td class="target" contenteditable="plaintext-only">').text(row.target).on('keydown',function(e){
             if(e.keyCode===13){
                 e.preventDefault();
+            }else{
+                let tar=$(e.target), text=tar.text(), id=tar.parent().attr('id');
+                console.log(id, text);
             }
         }));
     });
