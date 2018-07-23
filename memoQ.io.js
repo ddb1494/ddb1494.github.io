@@ -201,7 +201,11 @@ View.prototype.from=function(rows) {
         return $('<tr>').attr('id', row.id)
         .append($('<td class="no">').text(row.id+1))
         .append($('<td class="source">').text(row.source))
-        .append($('<td class="target" contenteditable="plaintext-only">').text(row.target));
+        .append($('<td class="target" contenteditable="plaintext-only">').text(row.target).on('keydown',function(e){
+            if(e.keyCode===13){
+                e.preventDefault();
+            }
+        }));
     });
 
     let sources=rows.map(row=>row.source);
