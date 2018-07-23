@@ -199,7 +199,6 @@ function View(memoQ){
 
 View.prototype.from=function(rows) {
     let c=this.content, ta=c.find('#ao-edit .target textarea');
-    console.log(ta)
     let trs=rows.map(row=>{
         return $('<tr>').attr('id', row.id)
         .append($('<td class="no">').text(row.id+1))
@@ -207,13 +206,12 @@ View.prototype.from=function(rows) {
         .append($('<td class="target" contenteditable="plaintext-only">').text(row.target).on('keydown',function(e){
             if(e.keyCode===13){
                 e.preventDefault();
-            }else{
-                let tar=$(e.target), text=tar.text(), id=tar.parent().attr('id'), a=ta.val().split('\n');
-                a[id]=text;
-                ta.val(a.join('\n'));
-                console.log(id, text, ta);
-
             }
+        }).on('input',function(e){
+            let tar=$(e.target), text=tar.text(), id=tar.parent().attr('id'), a=ta.val().split('\n');
+            a[id]=text;
+            ta.val(a.join('\n'));
+            console.log(e)
         }));
     });
 
