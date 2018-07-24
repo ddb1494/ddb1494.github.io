@@ -20,11 +20,5 @@
         console.log(e.key, e.keyCode, e);
     };
 
-    window.onmousedown = window.onclick = window.oncontextmenu = function(e) {
-    	e.preventDefault();
-    	addTip('[' + e.type + '] ' + (e.ctrlKey ? 'CTRL+': '') + (e.shiftKey ? 'SHIFT+': '') + (e.altKey ? 'ALT+': '') + (e.metaKey ? 'META+': '') + (e.which ? ('(which:' + e.which + ')') : '');
-    	console.log(e);
-    };
-
     addTip('开始侦听');
 })();
