@@ -123,8 +123,14 @@ function View(memoQ){
     background:#00f3;
 }
 #ao-mask textarea{
-    height:200px;
-    resize:none;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-shadow: 3px 3px 3px #ccc;
 }
 #ao-mask button {
     width:4em;
