@@ -7,7 +7,7 @@
 <body>
 <ol>
 	<li v-for="vue in vues">
-		<a href="vue.href">
+		<a v-bind:href="vue.href">
 			{{vue.name}}
 		</a>
 	</li>
