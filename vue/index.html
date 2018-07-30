@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="/lib/vue.min.js"></script>
+<title>Vue</title>
+</head>
+<body>
+
+<div id="app1">
+	<p v-if="show">show element</p>
+	<p v-if="hide">hide element</p>
+</div>
+
+<script>
+
+new Vue({
+	el:'#app1',
+	data:{
+		show:true,
+		hide:true,
+	}
+})
+
+</script>
+</body>
+</html>
