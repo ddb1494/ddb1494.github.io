@@ -8,13 +8,13 @@
 <ol>
 	<li v-for="vue in vues">
 		<a v-bind:href="vue.href">
-			{{vue.name}}
+			{{ vue.name }}
 		</a>
 	</li>
 </ol>
 <script>
 new Vue({
-	el:'li',
+	el:'ol',
 	data:{
 		vues:[
 			{name:'vue', href:'/vue'},
