@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="/lib/vue.min.js"></script>
 <title>ddb1494</title>
 </head>
 <body>
-Welcome ddb1494.github.io
+<ol>
+	<li v-for="vue in vues">
+		<a href="vue.href">
+			{{vue.name}}
+		</a>
+	</li>
+</ol>
+<script>
+new Vue({
+	el:'li',
+	data:{
+		vues:[
+			{name:'vue', href:'/vue'},
+			{name:'docs', href:'/docs'}
+		]
+	}
+})
+</script>
 </body>
 </html>
-<script src="/main.js"></script>
