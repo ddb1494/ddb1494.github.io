@@ -5,7 +5,8 @@
 <title>ddb1494</title>
 </head>
 <body>
-<ol>
+<ol id="app1">
+
 	<li v-for="vue in vues">
 		<a v-bind:href="vue.href">
 			{{ vue.name }}
@@ -14,7 +15,7 @@
 </ol>
 <script>
 new Vue({
-	el:'ol',
+	el:'#app1',
 	data:{
 		vues:[
 			{name:'vue', href:'/vue'},
