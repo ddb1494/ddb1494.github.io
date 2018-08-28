@@ -36,7 +36,7 @@ MemoQ.prototype.getRows = function(callback) {// 获取记录 [ {id,source,targe
     };
     this.ajax('api/TranslationService/GetWebContent', o, (data)=>{
         if(data.Success && data.Value && data.Value.Rows){
-            let rows=data.Value.Rows, res=[];console.log(rows)
+            let rows=data.Value.Rows, res=[];
             for(let row of rows) {
                 row=row.Row;
                 if(!row.Info.Locked) res.push({
