@@ -224,8 +224,8 @@ View.prototype.from=function(rows) {
                 e.preventDefault();
             }else{
                 setTimeout(()=>{
-                    let tar=$(e.target),
-                    ta.val(tar.toArray().map((e)=>{return $(e).text()}).join('\n'));
+                    let tar=$(e.target);
+                    ta.val(tar.toArray().map(function(e){return $(e).text()}).join('\n'));
                 });
             }
         }));
