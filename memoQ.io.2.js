@@ -214,7 +214,7 @@ function View(memoQ){
 }
 
 View.prototype.from=function(rows) {
-    let c=this.content, ta=c.find('#ao-edit .target textarea');
+    let c=this.content, ta=$('#ao-edit .target textarea');
     let trs=rows.map((row,index)=>{
         return $('<tr>').attr('id', row.id)
         .append($('<td class="no">').text(index+1))
@@ -225,7 +225,9 @@ View.prototype.from=function(rows) {
             }else{
                 setTimeout(()=>{
                     let tar=$(e.target);
-                    ta.val(tar.toArray().map(function(e){return $(e).text()}).join('\n'));
+                    ta.val(tar.toArray().map(function(e){
+                        return $(e).text()
+                    }).join('\n'));
                 });
             }
         }));
