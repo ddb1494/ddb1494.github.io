@@ -196,7 +196,8 @@ function View(memoQ){
             alert('번역문이 전부 비어 있습니다')
         }
     });
-    $('#ao-edit .target textarea').on('change', function(e){
+    c.find('#ao-edit .target textarea').on('change', function(e){
+        console.log(e.type);
         let text=e.target.value;
         let texts=text.split('\n');
         $(`#ao-preview tr td.target`).each((i,e)=>{
