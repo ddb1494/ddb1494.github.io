@@ -227,7 +227,7 @@ View.prototype.from=function(rows) {
 
     this.content.find('#ao-preview').empty().append(trs);
 
-    this.content.find('#ao-edit .source textarea').val(sources.join('\n').replace(/[[/g,'['));
+    this.content.find('#ao-edit .source textarea').val(sources.join('\n').replace(/\[\[/g,'['));
     this.content.find('#ao-edit .target textarea').val(targets.join('\n'));
 }
 
