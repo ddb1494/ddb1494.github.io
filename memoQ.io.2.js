@@ -247,4 +247,5 @@ mq.getRows(e=>{
     v.from(e);
 });
 
+console.log('ok')
 }// domain end
