@@ -155,6 +155,13 @@ function View(memoQ){
             </td>
         </tr>
     </tbody>
+    <tbody>
+        <tr>
+            <th>no</th>
+            <th>source</th>
+            <th>target</th>
+        </tr>
+    </tbody>
     <tbody id="ao-edit">
         <tr>
             <td class="no">1</td>
@@ -193,7 +200,7 @@ function View(memoQ){
                 }
             });
         }else{
-            alert('번역문이 전부 비어 있습니다')
+            alert('번역문이 전부 비어 있습니다.');
         }
     });
     c.find('#ao-edit .target textarea').on('change', function(e){
@@ -208,7 +215,7 @@ function View(memoQ){
 
 View.prototype.from=function(rows) {
     let c=this.content, ta=c.find('#ao-edit .target textarea');
-    let trs=rows.map(row=>{
+    let trs=rows.map((row,index)=>{
         return $('<tr>').attr('id', row.id)
         .append($('<td class="no">').text(row.id+1))
         .append($('<td class="source">').text(row.source))
