@@ -164,7 +164,7 @@ function View(memoQ){
     </tbody>
     <tbody id="ao-edit">
         <tr>
-            <td class="no">1</td>
+            <td class="no">#</td>
             <td class="source"><textarea readonly></textarea></td>
             <td class="target"><textarea></textarea></td>
         </tr>
@@ -177,7 +177,7 @@ function View(memoQ){
     c.find('button[name="close"]').one('click',()=>{
         c.remove();
     });
-    c.find('button[name="save"]').one('click',()=>{
+    c.find('button[name="save"]').one('click',(event)=>{
         let rows=[];
         c.find('#ao-preview tr').each((i,e)=>{
             e=$(e);
@@ -217,17 +217,16 @@ View.prototype.from=function(rows) {
     let c=this.content, ta=c.find('#ao-edit .target textarea');
     let trs=rows.map((row,index)=>{
         return $('<tr>').attr('id', row.id)
-        .append($('<td class="no">').text(row.id+1))
+        .append($('<td class="no">').text(index+1))
         .append($('<td class="source">').text(row.source))
         .append($('<td class="target" contenteditable="plaintext-only">').text(row.target).on('keydown',function(e){
             if(e.keyCode===13){
                 e.preventDefault();
             }else{
                 setTimeout(()=>{
-                    let tar=$(e.target), text=tar.text(), id=tar.parent().attr('id'), a=ta.val().split('\n');
-                    a[id]=text;
-                    ta.val(a.join('\n'));
-                })
+                    let tar=$(e.target),
+                    ta.val(tar.toArray().map((e)=>{return $(e).text()}).join('\n'));
+                });
             }
         }));
     });
