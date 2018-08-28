@@ -224,10 +224,11 @@ View.prototype.from=function(rows) {
                 e.preventDefault();
             }else{
                 setTimeout(()=>{
-                    let tar=$(e.target);
-                    ta.val(tar.toArray().map(function(e){
+                    // let tar=$(e.target);
+                    let text=$('#ao-preview tr td.target').toArray().map(function(e){
                         return $(e).text()
-                    }).join('\n'));
+                    }).join('\n');
+                    ta.val(text);
                 });
             }
         }));
