@@ -196,10 +196,11 @@ function View(memoQ){
             alert('번역문이 전부 비어 있습니다')
         }
     });
-    c.find('#ao-edit .target textarea').on('change', function(e){
+    $('#ao-edit .target textarea').on('change', function(e){
         let text=e.target.value;
-        text.split('\n').forEach((t,i)=>{
-            c.find(`#ao-preview tr[id=${i}] .target`).text(t);
+        let texts=text.split('\n');
+        $(`#ao-preview tr td.target`).each((i,e)=>{
+            $(e).text(texts[i]);
         });
     })
 }
@@ -229,7 +230,6 @@ View.prototype.from=function(rows) {
     this.content.find('#ao-preview').empty().append(trs);
 
     let sourcesText=sources.join('\n');
-    console.log(/\[\[/.test(sourcesText));
     this.content.find('#ao-edit .source textarea').val(sourcesText.replace(/\[\[/g,'['));
     this.content.find('#ao-edit .target textarea').val(targets.join('\n'));
 }
