@@ -2,23 +2,27 @@
 	let counts = {};
 
 	window.addEventListener('keydown',function(e){
-		e=e.originalEvent;
+		e.stopImmediatePropagation();
+		e.stopPropagation();
 		e.preventDefault();
-		let command=[];
+		let command=[], commandString;
 		if(e.ctrlKey)  command.push('ctrl');
 		if(e.shiftKey) command.push('shift');
 		if(e.altKey)   command.push('alt');
 		command.push(e.code);
-		let commandString=command.join('+');
-		console.log(commandString);
+		commandString=command.join('+');
+		if(e.repeat)   commandString='[repeat]'+commandString;
+		key(commandString);
+		console.log(e);
+		return false;
 	},true);
 
-	function UI(){
-		let ui=document.getElementById('keydownUI');
+	function UI(k='keydownUI'){
+		let ui=document.getElementById(k);
 		if(!ui) {
 			ui=document.createElement('div');
-			document.body.prependChild(ui);
-			ui.setAttribute('id',keydownUI);
+			document.body.insertAdjacentElement('afterbegin',ui);
+			ui.setAttribute('id',k);
 			ui.style.border='2px solid #ccf';
 			ui.style.background='#eef';
 			ui.style.display='block';
@@ -27,10 +31,10 @@
 	}
 
 	function key(k) {
-		let ui = UI().getElementById(k);
+		let ui = document.getElementById(k);
 		if(!ui){
 			ui=document.createElement('div');
-			UI().prependChild(ui);
+			UI().insertAdjacentElement('afterbegin',ui);
 			ui.setAttribute('id',k);
 			ui.style.background='2px solid #ffe';
 			ui.style.borderRadius='6px';
