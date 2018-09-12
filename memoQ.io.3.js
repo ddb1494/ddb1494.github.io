@@ -223,7 +223,15 @@ View.prototype.from=function(rows) {
         return $('<tr>').attr('id', row.id)
         .append($('<td class="no">').text(index+1))
         .append($('<td class="source">').text(row.source))
-        .append($('<td class="tag">').text(JSON.stringify(row.tag)))
+        .append($('<td class="tag">').text(JSON.stringify(row.tag.map(e=>{
+            if(e.Type===2) {
+                let o={};
+                o['<'+e.NumId+'>']=e.val;
+                return o;
+            }else{
+                return e;
+            }
+        }))))
         .append($('<td class="target" contenteditable="plaintext-only">').text(row.target).on('keydown',function(e){
             if(e.keyCode===13){
                 e.preventDefault();
