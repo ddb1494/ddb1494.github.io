@@ -38,40 +38,14 @@ MemoQ.prototype.getRows = function(callback) {// 获取记录 [ {id,source,targe
         if(data.Success && data.Value && data.Value.Rows){
             let rows=data.Value.Rows, res=[];
             for(let row of rows) {
-            	// row :{ EditorString:'<1><2>길드를 해체하시겠습니까?<2><3>길드를 해체하면 가입된 길드원 모두가 추방됩니다.<4><2>(해체 시 24시간 동안 길드 재가입 불가)',
-            	
                 row=row.Row;
-                if(!row.Info.Locked) {
-                	let source=row.SourceSegment.EditorString;
-	            	// { ITaglist:[{NumID:1, Type:2, TextPosition:0, Name:"mq:rxt", AttrInfo:"displaytext="\n" val="\n""}] } }
-	            		let ITaglist=row.ITaglist;
-	            		let len=ITaglist.length;
-	            		while(len-->0){
-	            			let AttrInfo=ITaglist[len].AttrInfo;
-	            			// let type=AttrInfo.Type;
-	            			// let pos=AttrInfo.TextPosition;
-	            			let val=AttrInfo.slice(AttrInfo.indexOf(' val="')+6,-1);
-
-	            		}
-
-	            		ITaglist.map(e=>)
-
-		            	row.ITaglist.forEach(e=>{
-		            		let val=e.AttrInfo.slice(e.AttrInfo.indexOf(' val="')+6,-1);
-		            		
-		            		if(e.Type===2){
-
-		            		}
-		            		let regExp=new RegExp('[\a-\/<\>\[\]\{\}]+'+e.NumID+'[\\/<\>\[\]\{\}]+');
-		            		source=source.replace(regExp,val);
-		            	});
-	                res.push({
-	                  // locked: row.Info.Locked,
-	                  id:  row.Id,
-	                  source,
-	                  target: row.TargetSegment.EditorString
-	                });
-                }
+                if(!row.Info.Locked) res.push({
+                    // locked: row.Info.Locked,
+                    id:  row.Id,
+                    source: row.SourceSegment.EditorString,
+                    tag: row.SourceSegment.ITaglist,
+                    target: row.TargetSegment.EditorString
+                });
             }
             callback(res);
         }
@@ -119,8 +93,7 @@ function View(memoQ){
     $('#ao-mask').remove();
     this.memoQ=memoQ;
     let height=screen.availHeight;
-    let html=`<div>version: 3</div>
-<div id="ao-mask">
+    let html=`<div id="ao-mask">
 <style>
 #ao-mask{
     margin:0; padding:0;
@@ -186,6 +159,7 @@ function View(memoQ){
     <tbody>
         <tr>
             <th>no</th>
+            <th>tag</th>
             <th>source</th>
             <th>target</th>
         </tr>
@@ -193,6 +167,7 @@ function View(memoQ){
     <tbody id="ao-edit">
         <tr>
             <td class="no">#</td>
+            <td class="tag"><textarea readonly></textarea></td>
             <td class="source"><textarea readonly></textarea></td>
             <td class="target"><textarea></textarea></td>
         </tr>
@@ -247,6 +222,7 @@ View.prototype.from=function(rows) {
         return $('<tr>').attr('id', row.id)
         .append($('<td class="no">').text(index+1))
         .append($('<td class="source">').text(row.source))
+        .append($('<td class="tag">').text(JSON.stringify(row.tag)))
         .append($('<td class="target" contenteditable="plaintext-only">').text(row.target).on('keydown',function(e){
             if(e.keyCode===13){
                 e.preventDefault();
@@ -262,14 +238,22 @@ View.prototype.from=function(rows) {
         }));
     });
 
-    let sources=rows.map(row=>row.source);
-    let targets=rows.map(row=>row.target);
+    let sources=[];
+    let tags=[];
+    let targets=[];
+
+    rows.forEach(row=>{
+    	sources.push(row.source);
+    	targets.push(row.target);
+    	tags.push(row.source+'\t\t'+JSON.stringify(row.tag));
+    })
 
     this.content.find('#ao-preview').empty().append(trs);
 
     let sourcesText=sources.join('\n');
     this.content.find('#ao-edit .source textarea').val(sourcesText.replace(/\[\[/g,'['));
     this.content.find('#ao-edit .target textarea').val(targets.join('\n'));
+    this.content.find('#ao-edit .tag textarea').val(tags.join('\n'));
 }
 
 var mq=new MemoQ;
