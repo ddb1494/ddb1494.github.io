@@ -1,3 +1,4 @@
+
 {// domain start
 
 
@@ -245,7 +246,7 @@ View.prototype.from=function(rows) {
     rows.forEach(row=>{
     	sources.push(row.source);
     	targets.push(row.target);
-    	tags.push(row.source+'\t\t'+JSON.stringify(row.tag));
+    	tags.push(row.source+'\t'+(row.target||'\u2423')+'\t'+JSON.stringify(row.tag));
     })
 
     this.content.find('#ao-preview').empty().append(trs);
