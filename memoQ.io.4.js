@@ -167,7 +167,7 @@ function View(memoQ){
     <tbody>
         <tr>
             <th>no</th>
-            <th>tag</th>
+            <th>source(tag)</th>
             <th>source</th>
             <th>target</th>
         </tr>
@@ -245,7 +245,7 @@ View.prototype.from=function(rows) {
         }
         return $('<tr>').attr('id', row.id)
         .append($('<td class="no">').text(index+1))
-        .append($('<td class="source">').text(row.source))
+        .append($('<td class="source">').text(row.source.replace(/\[\[/g,'['))
         .append($('<td class="tag">').text(row.tag))
         .append($('<td class="target" contenteditable="plaintext-only">').text(row.target).on('keydown',function(e){
             if(e.keyCode===13){
