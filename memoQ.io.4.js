@@ -229,10 +229,11 @@ View.prototype.from=function(rows) {
     let trs=rows.map((row,index)=>{
         if(Array.isArray(row.tag)) {
             row.tag=row.tag.map(e=>{
+                let r=[];
                 for(let k in e){
-                    e[k]=e[k].match(/displaytext=".+?" val="(.+?)"/);
+                    r.push(k+':'+e[k].match(/displaytext=".+?" val="(.+?)"/));
                 }
-                return e;
+                return r.join('\n');
             }).join('\n');
         }else{
             row.tag='';
