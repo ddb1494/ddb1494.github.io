@@ -237,8 +237,8 @@ View.prototype.from=function(rows) {
                     }
                     r.push(k+':'+v);
                 }
-                return r.join('\n');
-            }).join('\n');
+                return r.join();
+            }).join();
 
         }else{
             row.tag='';
