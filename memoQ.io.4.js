@@ -231,10 +231,15 @@ View.prototype.from=function(rows) {
             row.tag=row.tag.map(e=>{
                 let r=[];
                 for(let k in e){
-                    r.push(k+':'+e[k].match(/displaytext=".+?" val="(.+?)"/));
+                    let v=e[k].match(/displaytext=".+?" val="(.+?)"/);
+                    if(v){
+                        v=v[1]||e[k];
+                    }
+                    r.push(k+':'+v);
                 }
                 return r.join('\n');
             }).join('\n');
+
         }else{
             row.tag='';
         }
