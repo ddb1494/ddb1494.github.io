@@ -231,9 +231,13 @@ View.prototype.from=function(rows) {
             row.tag=row.tag.map(e=>{
                 let r=[];
                 for(let k in e){
-                    let v=e[k].match(/displaytext=".+?" val="(.+?)"/);
-                    if(v){
+                    let v=e[k];
+                    if(typeof v==='string'){
+                        v=v.match(/displaytext=".+?" val="(.+?)"/);
                         v=v[1]||e[k];
+                    }else{
+                        console.warn({[k]:v});
+                        v='';
                     }
                     r.push(k+':'+v);
                 }
