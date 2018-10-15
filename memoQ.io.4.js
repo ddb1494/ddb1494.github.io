@@ -234,12 +234,16 @@ View.prototype.from=function(rows) {
                     let v=e[k];
                     if(typeof v==='string'){
                         v=v.match(/displaytext=".+?" val="(.+?)"/);
-                        v=v[1]||e[k];
+                        if(v!==null) {
+                            v=v[1]||e[k];
+                        }else{
+                            v='';
+                        }
                     }else{
                         console.warn({[k]:v});
                         v='';
                     }
-                    r.push(k+':'+v);
+                    if(v.length) r.push(k+':'+v);
                 }
                 return r.join();
             }).join();
