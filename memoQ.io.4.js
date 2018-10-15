@@ -243,7 +243,7 @@ View.prototype.from=function(rows) {
                         console.warn({[k]:v});
                         v='';
                     }
-                    if(v.length) r.push(k+':'+v);
+                    if(v!==null) r.push(k+':'+v);
                 }
                 return r.join();
             }).join();
