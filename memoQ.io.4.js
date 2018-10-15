@@ -237,7 +237,7 @@ View.prototype.from=function(rows) {
                         if(v!==null) {
                             v=v[1]||e[k];
                         }else{
-                            v='';
+                            // v='';
                         }
                     }else{
                         console.warn({[k]:v});
