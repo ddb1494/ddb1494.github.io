@@ -4,7 +4,7 @@
 	window.addEventListener('keydown',function(e){
 		e.stopImmediatePropagation();
 		e.stopPropagation();
-		e.preventDefault();
+		if(e.key!=='F12') e.preventDefault();
 		let command=[], commandString;
 		if(e.ctrlKey)  command.push('ctrl');
 		if(e.shiftKey) command.push('shift');
