@@ -81,7 +81,7 @@ MemoQ.prototype.setRows = function(rows, callback){// 设置记录
             locked:false,
             rangeForCorrectedLQA:null,
             sourceSegmentHtml:e.source,
-            sourceSegmentChanges:[],
+            //sourceSegmentChanges:[],// 莫非是这里？
             targetSegmentChanges:[],
             targetSegmentHtml:e.target,
             translationState:2,
@@ -284,7 +284,7 @@ View.prototype.from=function(rows) {
 
     let sourcesText=sources.join('\n');
     this.content.find('#ao-edit .source textarea').val(sourcesText.replace(/\[\[/g,'['));
-    this.content.find('#ao-edit .target textarea').val(targets.join('\n'));
+    this.content.find('#ao-edit .target textarea').val(targets.join('\n')).focus();
     this.content.find('#ao-edit .tag textarea').val(tags.join('\n'));
 }
 
