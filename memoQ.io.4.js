@@ -79,7 +79,7 @@ MemoQ.prototype.setRows = function(rows, callback){// 设置记录
 			comments:[],
 			locked:false,
 			rangeForCorrectedLQA:null,
-			sourceSegmentHtml:e.source,
+ 			//sourceSegmentHtml:e.source,// 不想修改原文？
 			//sourceSegmentChanges:[],// 莫非是这里？
 			targetSegmentChanges:[],
 			targetSegmentHtml:e.target,
