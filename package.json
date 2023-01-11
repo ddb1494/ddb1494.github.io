@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build-dev": "tsc && vite build --mode development",
     "build-prod": "tsc && vite build --mode production",
+    "git-push": "npm run build-prod && git add . && git commit -m \"+\" && git push",
     "start": "vite preview",
     "clear": "rm -rf dist"
   },
