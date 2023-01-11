@@ -1,9 +1,9 @@
-import { Box, Button } from "@mui/material";
-import { useCallback, useInsertionEffect, useRef, useState } from "react";
-
+import { Box, Button } from '@mui/material';
+import { useCallback, useEffect, useInsertionEffect, useRef, useState } from 'react';
+import Img from './Img';
+import { css } from '@emotion/react';
 
 import MyWorker from './worker?worker';
-
 
 const useHook = () => {
   const ref = useRef<HTMLHeadingElement>(null);
@@ -34,15 +34,28 @@ const useHook = () => {
   return { ref, refresh, pending, result };
 };
 
-
 const Page = () => {
   const { ref, refresh, pending, result } = useHook();
 
-  return <Box>
-    <h3 ref={ref}>Worker</h3>
-    <Button onClick={refresh}>refresh</Button>
-    <Box>{pending ? 'pending...' : JSON.stringify(result)}</Box>
-  </Box>;
+  return (
+    <Box
+      css={css`
+        svg {
+          overflow: visible;
+          width: 100%;
+        }
+        path {
+          opacity: 0;
+        }
+      `}
+    >
+      <h3 ref={ref}>Worker</h3>
+      <Button onClick={refresh}>refresh</Button>
+      <Box>{pending ? 'pending...' : JSON.stringify(result)}</Box>
+
+      <Img />
+    </Box>
+  );
 };
 
 Page.displayName = 'Worker';

@@ -18,6 +18,7 @@ const Transition = lazy(() => import('@page/React/Transition'));
 const DeferredValue = lazy(() => import('@page/React/DeferredValue'));
 const Suspense_ = lazy(() => import('@page/React/Suspense'));
 const ContextProvider = lazy(() => import('@page/React/ContextProvider'));
+const Chroma = lazy(() => import('@page/Chroma'));
 
 const MyRoutes = () => {
   return (
@@ -28,7 +29,8 @@ const MyRoutes = () => {
         </nav>
 
         <Routes>
-          <Route index element={<Navigate replace to="/worker" />} />
+          <Route index element={<Navigate replace to="/chroma" />} />
+          <Route path="/chroma" element={<Chroma />} />
           <Route path="/worker" element={<Worker />} />
           <Route path="/react" element={<Outlet />}>
             <Route path="transition" element={<Transition />} />
