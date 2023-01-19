@@ -1,0 +1,1 @@
+addEventListener("message",(e=>{const{data:a}=e,s=new Uint8Array(a);s[0]=11,postMessage({ok:!1,pending:!0,data:null}),setTimeout((()=>{postMessage({ok:!0,data:s.buffer},{transfer:[s.buffer]})}),500)}));

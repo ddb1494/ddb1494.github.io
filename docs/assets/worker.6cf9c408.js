@@ -1,1 +1,0 @@
-addEventListener("message",s=>{const{data:t}=s;console.log("worker",s);const e=new Uint8Array(t);e[0]=11,postMessage({ok:!1,pending:!0,data:null}),setTimeout(()=>{postMessage({ok:!0,data:e.buffer},{transfer:[e.buffer]})},500)});
