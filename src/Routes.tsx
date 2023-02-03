@@ -1,13 +1,15 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Outlet,
   Navigate,
+  useNavigate,
 } from 'react-router-dom';
 import Navbar from './Navbar';
 import NotFound from '@page/NotFound';
+import Index from './page/Index';
 
 // auth
 
@@ -29,7 +31,8 @@ const MyRoutes = () => {
         </nav>
 
         <Routes>
-          <Route index element={<Navigate replace to="/chroma" />} />
+          {/* <Route index element={<Navigate replace to="/chroma" />} /> */}
+          <Route index element={<Index />} />
           <Route path="/chroma" element={<Chroma />} />
           <Route path="/worker" element={<Worker />} />
           <Route path="/react" element={<Outlet />}>
