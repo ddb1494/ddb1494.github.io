@@ -80,5 +80,15 @@
   "ui79-info": "개인 프로젝트:\n프론트 1명 + 백엔드 1명.\n프론트 개발 및 운영.\nReact, PWA",
   "resume": "이력서",
   "about-me": "자기소개서",
-  "portfolio": "포트폴리오"
+  "portfolio": "포트폴리오",
+  "portfolios": [
+    {
+      "title": "TM6",
+      "description": "PWA",
+      "frontend": "React, TypeScript, Vite",
+      "backend": "Express, Sequelize, Node",
+      "database": "Postgres",
+      "outcome-url": "https://tm6.cihot.com"
+    }
+  ]
 }
