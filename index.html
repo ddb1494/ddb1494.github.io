@@ -17,11 +17,24 @@
     </script>
     <!-- styles -->
     <style>
-      .light {
-        color-scheme: light dark;
+      body {
+        margin: 0px !important;
+        padding: 0;
       }
-      .dark {
-        color-scheme: dark light;
+      [data-prefers-color='light'] {
+        color-scheme: light;
+      }
+      [data-prefers-color='dark'] {
+        color-scheme: dark;
+      }
+      .pwa-install-panel {
+        display: flex;
+        justify-content: center;
+        background-color: #7777;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
       }
     </style>
     <!--  -->
@@ -32,8 +45,8 @@
       rel="stylesheet"
     />
     <title>ddb1494</title>
-    <script type="module" crossorigin src="/assets/index-Bm4yHryM.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-IgCeZYii.css">
+    <script type="module" crossorigin src="/app.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-RsQeyxDu.css">
   </head>
   <body>
     <div id="root"></div>

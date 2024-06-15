@@ -1,0 +1,82 @@
+{
+  "name": "金熙栋",
+  "info": "男，{{birth}}（{{age}}岁）",
+  "address": "京畿道安养市",
+  "culture": "企业文化",
+  "education": "学历",
+  "experience": "工作履历",
+  "experiences": [
+    {
+      "name": "2bytescorp株式会社",
+      "time": "2021/06 ~ 2024/02 （2年9个月）",
+      "desc": "【官网前端开发】\n2byes官网前端开发及维护。（React.js, gsap, jQuery, NotionAPI, SlackAPI）\nPenta官网前端开发及维护，重新开发。（React.js, TypeScript, React-Query, SlackAPI）\nSpacegears.game官网前端开发及维护。（React.js, TypeScript, gsap, mui）\nboracat.io官网前端开发。 （Next.js, TypeScript, date-fns, mui）\n\n公司内部专用工具\njson文件与Excel文件的格式转换类工具的开发。（React.js, Electron）",
+      "status": "劝退离职"
+    },
+    {
+      "name": "GameDex株式会社",
+      "time": "2017/11 ~ 2021/06 （3年8个月）",
+      "desc": "【中韩翻译】\n参与项目包含“航海冲突”、“炮艇战：3D直升机”、“加勒比海盗：战争之潮”、“秦始皇”、“Game of Dice”、“街头篮球”、“Bless M”、“创世纪战：安塔利亚战争”、“钢铁坦克”、“穿越火线：战争地带”、以及其他外包项目。\n\n【开发翻译工具】\n开发有助于翻译的小工具。（前端：主要用jQuery开发 / 后端：使用Node.js进行开发后发布到aws）",
+      "status": "离职"
+    },
+    {
+      "name": "盛大网络（中国）",
+      "time": "2007/12 ~ 2010/12 （3年1个月）",
+      "desc": "【中日翻译】\n会议翻译、文件翻译、海外对接。\n\n【游戏运行策划】\n游戏活动策划案及GM。\n\n【收集海外信息】\n收集海外游戏相关新闻动向。",
+      "status": "离职"
+    }
+  ],
+  "educations": [
+    {
+      "name": "延边大学",
+      "time": "2002/09 - 2006/06 （4年制）",
+      "desc": "语言文学教育专业  -  海外（中国）",
+      "status": "学士 毕业"
+    },
+    {
+      "name": "延边第一高等中学",
+      "time": "1999/09 - 2002/06 （3年制）",
+      "desc": "日语班  -  海外（中国）",
+      "status": "毕业"
+    }
+  ],
+  "cultures": [
+    {
+      "title": "弹性工作制",
+      "description": "时差上下班和在家办公的公司。"
+    },
+    {
+      "title": "加班",
+      "description": "必要时可回家继续加班的公司。"
+    },
+    {
+      "title": "年假理由",
+      "description": "不深究年假理由的公司。"
+    },
+    {
+      "title": "聚餐、酒、烟",
+      "description": "对于公司聚餐、烟、酒，不强加于人的公司。"
+    }
+  ],
+  "skill": "技术",
+  "mode": {
+    "light": "亮色模式",
+    "dark": "暗色模式",
+    "system": "自动模式"
+  },
+  "kakaotalk": "Kakao Talk 1:1",
+  "2bytescorp": "2bytescorp",
+  "2bytescorp-hostname": "2bytescorp.com",
+  "pentapeak": "Pentapeak Studios",
+  "pentapeak-hostname": "pentapeakstudios.com",
+  "spacegears": "Space Gears",
+  "spacegears-hostname": "spacegears.game",
+  "ui79": "You I Friend",
+  "ui79-hostname": "ui79.com",
+  "2bytescorp-info": "公司项目：\n前端1人+后端1人。\n前端开发及运营。\nReact, AWS。",
+  "pentapeak-info": "公司项目：\n前端1人+后端1人。\n前端开发及运营。\nReact, AWS。",
+  "spacegears-info": "公司项目：\n前端5人+后端2人。\n前端开发及运营。\nReact, AWS。",
+  "ui79-info": "个人项目：\n前端1人+后端1人。\n前端开发及运营。\nReact, PWA。",
+  "resume": "简历",
+  "about-me": "自我介绍",
+  "portfolio": "作品"
+}

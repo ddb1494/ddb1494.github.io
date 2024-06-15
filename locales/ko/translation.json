@@ -1,0 +1,84 @@
+{
+  "name": "김희동",
+  "info": "남, {{birth}} ({{age}}세)",
+  "address": "경기도 안양시",
+  "culture": "컬쳐",
+  "education": "학력",
+  "experience": "경력",
+  "experiences": [
+    {
+      "name": "투바이트(주)",
+      "time": "2021/06 ~ 2024/02 (2년 9개월)",
+      "desc": "[공홈 프론트엔드 개발]\n투바이트 공식 홈페이지 프론트엔드 개발 및 유지보수. (React.js, gsap, jQuery, NotionAPI, SlackAPI)\n펜타피크 공식 홈페이지 프론트엔드 개발 및 유지보수 및 재개발. (React.js, TypeScript, React-Query, SlackAPI)\n스페이스기어스 공식 홈페이지 프론트엔드 개발 및 유지보수. (React.js, TypeScript, gsap, mui)\n보라캣이 공식 홈페이지 프론트엔드 개발 및 유지보수. (Next.js, TypeScript, date-fns, mui)\n\n[사내 툴 개발]\njson 파일과 Excel 파일을 서로 전환하는 툴의 개발을 주도했습니다. (React.js, Electron)",
+      "status": "권고사직"
+    },
+    {
+      "name": "(주)게임덱스",
+      "time": "2017/11 ~ 2021/06 (3년 8개월)",
+      "desc": "[중국어 현지화 번역]\n참여 했던 프로젝트는 [오션앤엠파이어], [건쉽배틀:토탈워페어], [캐리비안의 해적: 전쟁의물결], [진시황], [주사위의 신], [프리스타일], [블레스M], [창세기전: 안타리아의 전쟁], [아이언탱크], [크로스파이어:워존] 및 기타 외주 등등 입니다.\n\n[번역툴 개발]\n번역에 도움이 되는 웹툴 개발. (프론트엔드: HTML, jQuery, CSS / 백엔드: Node.js 개발후 aws 배포)",
+      "status": "이직"
+    },
+    {
+      "name": "sdo (중국)",
+      "time": "2007/12 ~ 2010/12 (3년 1개월)",
+      "desc": "[중국어 일본어 번역]\n회의 통역, 문서 번역, 해외 창구 담당.\n\n[게임기획]\n게임 이벤트 기획 및 GM 참여.\n\n[해외 정보 수집]\n게임관련 뉴스 동향 수집.",
+      "status": "이직"
+    }
+  ],
+  "educations": [
+    {
+      "name": "연변대학교",
+      "time": "2002/09 ~ 2006/06 (4년제)",
+      "desc": "언어문학교육학과  -  해외(중국)",
+      "status": "학사 졸업",
+      "link": "https://www.chsi.com.cn/xlrz/bgcx.jsp?v=7223389-11-2E9B32FB"
+    },
+    {
+      "name": "연변제일고등학교",
+      "time": "1999/09 ~ 2002/06 (3년제)",
+      "desc": "일본어반  -  해외(중국)",
+      "status": "졸업"
+    }
+  ],
+  "cultures": [
+    {
+      "title": "유연근무제",
+      "description": "시차 출퇴근 및 재택근무 가능한 회사."
+    },
+    {
+      "title": "연장근무",
+      "description": "필요시 귀가후 재택근무 가능한 회사."
+    },
+    {
+      "title": "연차사유",
+      "description": "연차사유를 묻고 따지지 않는 회사."
+    },
+    {
+      "title": "회식, 술, 담배",
+      "description": "회식, 술, 담배를 강요하지 않는 회사."
+    }
+  ],
+  "skill": "기술스택",
+  "mode": {
+    "light": "라이트 모드",
+    "dark": "다크 모드",
+    "system": "자동 모드"
+  },
+  "jp": "日本語",
+  "kakaotalk": "카카오톡 1:1",
+  "2bytescorp": "투바이트",
+  "2bytescorp-hostname": "2bytescorp.com",
+  "pentapeak": "펜타피크 스튜디오",
+  "pentapeak-hostname": "pentapeakstudios.com",
+  "spacegears": "스페이스 기어스",
+  "ui79": "You I 친구",
+  "ui79-hostname": "ui79-com.github.io",
+  "spacegears-hostname": "spacegears.game",
+  "2bytescorp-info": "회사 프로젝트:\n프론트 1명 + 백엔드 1명.\n프론트 개발 및 운영.\nReact, AWS.",
+  "pentapeak-info": "회사 프로젝트:\n프론트 1명 + 백엔드 1명.\n프론트 개발 및 운영.\nReact, AWS.",
+  "spacegears-info": "회사 프로젝트:\n프론트 5명 + 백엔드 2명.\n프론트 개발 및 운영.\nReact, AWS.",
+  "ui79-info": "개인 프로젝트:\n프론트 1명 + 백엔드 1명.\n프론트 개발 및 운영.\nReact, PWA",
+  "resume": "이력서",
+  "about-me": "자기소개서",
+  "portfolio": "포트폴리오"
+}
