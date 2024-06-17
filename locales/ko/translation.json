@@ -1,7 +1,7 @@
 {
   "name": "김희동",
   "info": "남, {{birth}} ({{age}}세)",
-  "address": "경기도 안양시",
+  "address": "경기도 안양시에 거주",
   "culture": "컬쳐",
   "education": "학력",
   "experience": "경력",
@@ -64,7 +64,9 @@
     "dark": "다크 모드",
     "system": "자동 모드"
   },
-  "jp": "日本語",
+  "ko": "한국어",
+  "zh-CN": "중국어",
+  "jp": "일본어",
   "kakaotalk": "카카오톡 1:1",
   "2bytescorp": "투바이트",
   "2bytescorp-hostname": "2bytescorp.com",

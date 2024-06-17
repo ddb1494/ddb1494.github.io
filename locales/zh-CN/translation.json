@@ -1,7 +1,7 @@
 {
   "name": "金熙栋",
   "info": "男，{{birth}}（{{age}}岁）",
-  "address": "京畿道安养市",
+  "address": "居住在京畿道安养市",
   "culture": "企业文化",
   "education": "学历",
   "experience": "工作履历",
@@ -63,6 +63,9 @@
     "dark": "暗色模式",
     "system": "自动模式"
   },
+  "ko": "韩语",
+  "zh-CN": "简体中文",
+  "jp": "日语",
   "kakaotalk": "Kakao Talk 1:1",
   "2bytescorp": "2bytescorp",
   "2bytescorp-hostname": "2bytescorp.com",
