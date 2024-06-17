@@ -398,7 +398,7 @@ React, Vite, TypeScript, React-Query, MUI, Ant Design 등의 최신 기술을 �
 
 감사합니다.`,iW=`
 - 담배를 싫어하고! 술은 건강을 위해서 조금만 마십니다. 
-- 취미는 드마라와 애니메이션 감상 및 영화 관람입니다.
+- 취미는 모바일게임 클래시로얄 및 영화 관람입니다.
 `;function aW(){return re.jsxs("div",{className:lW,children:[re.jsx(rW,{level:2,children:"자기소개서"}),re.jsx(DS,{children:oW}),re.jsx(DS,{type:"secondary",style:{marginTop:"5rem"},children:iW})]})}const lW=Bo`
   padding: 2rem;
   background-color: #7771;
