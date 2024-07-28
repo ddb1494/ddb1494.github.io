@@ -9,6 +9,12 @@
   "experience-info": "开发6年、翻译10年经验",
   "experiences": [
     {
+      "name": "Farmzone",
+      "time": "2024/07 ~ 至今",
+      "desc": "QSIS前端React开发及维护。",
+      "status": "재직중"
+    },
+    {
       "name": "2bytescorp株式会社",
       "time": "2021/06 ~ 2024/02 （2年9个月）",
       "desc": "【官网前端开发】\n2byes官网前端开发及维护。（React.js, gsap, jQuery, NotionAPI, SlackAPI）\nPenta官网前端开发及维护，重新开发。（React.js, TypeScript, React-Query, SlackAPI）\nSpacegears.game官网前端开发及维护。（React.js, TypeScript, gsap, mui）\nboracat.io官网前端开发。 （Next.js, TypeScript, date-fns, mui）\n\n公司内部专用工具\njson文件与Excel文件的格式转换类工具的开发。（React.js, Electron）",

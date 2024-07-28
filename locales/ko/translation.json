@@ -9,6 +9,12 @@
   "experience-info": "개발 6년차, 번역 10년차",
   "experiences": [
     {
+      "name": "(주)팜존에스엔씨",
+      "time": "2024/07 ~ 현재",
+      "desc": "QSIS 프론트엔드 React 개발 및 유지보수",
+      "status": "재직중"
+    },
+    {
       "name": "투바이트(주)",
       "time": "2021/06 ~ 2024/02 (2년 9개월)",
       "desc": "[공홈 프론트엔드 개발]\n투바이트 공식 홈페이지 프론트엔드 개발 및 유지보수. (React.js, gsap, jQuery, NotionAPI, SlackAPI)\n펜타피크 공식 홈페이지 프론트엔드 개발 및 유지보수 및 재개발. (React.js, TypeScript, React-Query, SlackAPI)\n스페이스기어스 공식 홈페이지 프론트엔드 개발 및 유지보수. (React.js, TypeScript, gsap, mui)\n보라캣이 공식 홈페이지 프론트엔드 개발 및 유지보수. (Next.js, TypeScript, date-fns, mui)\n\n[사내 툴 개발]\njson 파일과 Excel 파일을 서로 전환하는 툴의 개발을 주도했습니다. (React.js, Electron)",
