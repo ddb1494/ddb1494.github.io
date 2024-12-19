@@ -1,12 +1,12 @@
 {
   "name": "金熙栋",
-  "info": "男，{{birth}}（{{age}}岁）",
-  "position": "网页开发程序员&韩语翻译",
+  "info": "男，{{birth}}",
+  "position": "网页开发程序员(6年)",
   "address": "居住在京畿道安养市",
   "culture": "企业文化",
   "education": "学历",
   "experience": "工作履历",
-  "experience-info": "开发6年、翻译10年经验",
+  "experience-info": "韩语翻译(10年)",
   "experiences": [
     {
       "name": "Farmzone",

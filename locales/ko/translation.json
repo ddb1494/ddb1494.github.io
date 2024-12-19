@@ -1,12 +1,12 @@
 {
   "name": "김희동",
-  "info": "남, {{birth}} ({{age}}세)",
-  "position": "웹 개발자 & 중국어 번역가",
-  "address": "경기도 안양시에 거주",
+  "info": "{{birth}}",
+  "position": "웹 개발자 (6년차)",
+  "address": "경기도 안양시",
   "culture": "컬쳐",
   "education": "학력",
   "experience": "경력",
-  "experience-info": "개발 6년차, 번역 10년차",
+  "experience-info": "중국어 번역가 (10년차)",
   "experiences": [
     {
       "name": "(주)팜존에스엔씨",
