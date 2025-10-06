@@ -97,10 +97,10 @@
   "spacegears-info": "公司项目：\n前端5人+后端2人。\n前端开发及运营。\nReact, AWS。",
   "ui79-info": "个人项目：\n前端1人+后端1人。\n前端开发及运营。\nReact, PWA。",
   "resume": "简历",
-  "portfolio": "作品",
+  "portfolio": "作品集",
   "job-description": "工作描述",
   "blood-type-a": "血型 A型",
-  "about-me": "自我介绍",
-  "about-me-article": "大家好。\n\n我作为一名网页开发者，通过各种项目和经验积累了自己的实力。\n\n在大学期间，通过社团活动制作网页，首次感受到网页开发的魅力。\n通过那次经验，我打下了HTML、CSS、JavaScript等网页开发的基础，了解了设计用户友好界面的重要性。\n\n大学毕业后，在Shanda公司担任游戏GM工作时，亲身体会到了网页工具的不便。为了改善这一情况，我开始正式学习JavaScript，编写了各种脚本，大大提高了工作效率。\n通过这一过程，我积累了问题解决能力和对JavaScript的深刻理解。\n\n之后，在GameDex公司为改善翻译工具的不便，开发了新的翻译工具。\n通过这个项目，我利用了各种编程语言和工具，积累了解决实际问题的经验，这大大提高了公司的工作效率。\n\n在2Bytes公司担任前端开发人员时，我主要负责了公司网站和内部工具的开发。\n利用React、Vite、TypeScript、React-Query、MUI、Ant Design等最新技术，最大限度地提升了用户体验，提高了内部系统的效率。\n但由于公司财务出现了严重亏损，开发团队被大量裁员，我也是其中一个倒霉鬼，目前正在积极再就业。\n\n我的目标是始终站在用户的角度思考，提供更好的用户体验。\n未来，我将不断学习和成长，成为网页开发领域的顶尖专家。\n\n谢谢。\n",
-  "about-me-tip": "厌恶吸烟！为了健康很少喝酒。\n兴趣是玩手游《皇室战争》和看电影。"
+  "about-me": "关于我",
+  "about-me-article": "■ 专业能力及工作概述\n\n具备6年Web开发经验，专精前端开发领域，成功完成多个企业级项目。在React生态系统和现代Web技术应用方面拥有丰富的实战经验，致力于打造以用户为中心的优质界面。\n\n■ 核心技术栈及专业领域\n\n• 前端技术: React, TypeScript, Vite, Next.js\n• UI/UX: Ant Design, MUI, 响应式Web设计\n• 状态管理: React Query, Context API\n• 开发工具: VSCode, Git, GitHub, Docker\n• 协作工具: Slack, Jira, Figma\n\n■ 主要成果及项目经验\n\n**Farmzone SNC (2024.07 ~ 至今)**\n- 负责QSIS外包项目前端开发\n- HanWha Vision Toolbox2 React功能开发与维护\n\n**2Bytes Corp (2021.06 ~ 2024.02)**\n- 多家企业官网前端开发及维护\n- 基于React.js、TypeScript构建现代化Web应用\n- 开发内部工具提升业务效率 (Excel-JSON转换工具)\n\n**GameDex (2017.11 ~ 2021.06)**\n- 开发翻译业务支持Web工具 (Node.js, jQuery)\n- 参与多个多语言本地化项目\n\n■ 开发理念及工作方式\n\n始终以用户体验(UX)为核心进行开发。不仅仅是实现功能，更注重设计直观便捷的用户界面。通过持续学习积极引入最新技术趋势，不断提升项目质量和可维护性。\n\n■ 未来目标\n\n紧跟Web技术发展趋势，目标成长为全栈开发工程师，特别希望在以用户为中心的创新Web服务开发方面贡献自己的力量。",
+  "about-me-tip": "■ 个人特质\n\n• 追求健康的生活方式，无吸烟习惯\n• 重视工作与个人时间的平衡\n• 兴趣爱好: 手游《皇室战争》、电影欣赏，通过娱乐获取创意灵感"
 }
