@@ -10,7 +10,7 @@
   "experiences": [
     {
       "name": "(주)팜존에스엔씨",
-      "time": "2024/07 ~ 2025/03",
+      "time": "2024/07 ~ 2025/03 (8개월)",
       "desc": "[React 프론트엔드 개발]\n2024.07 ~ 2024.11 Our Home QSIS 외주 개발\n2024.11 ~ 현재 HanWha Vision Toolbox2 개발 React 추가/수정 외주 개발",
       "status": "재직중"
     },
@@ -114,5 +114,10 @@
   "blood-type-a": "혈액형 A형",
   "about-me": "자기소개서",
   "about-me-article": "■ 전문 역량 및 경력 개요\n\n6년간의 웹 개발 경험을 바탕으로 프론트엔드 전문가로서 다양한 프로젝트를 성공적으로 수행해왔습니다. 특히 React 생태계와 최신 웹 기술을 활용한 사용자 중심의 인터페이스 개발에 전문성을 보유하고 있습니다.\n\n■ 핵심 기술 스택 및 전문 분야\n\n• Frontend: React, TypeScript, Vite, Next.js\n• UI/UX: Ant Design, MUI, 반응형 웹 디자인\n• 상태 관리: React Query, Context API\n• 개발 도구: VSCode, Git, GitHub, Docker\n• 협업 도구: Slack, Jira, Figma\n\n■ 주요 성과 및 프로젝트 경험\n\n**팜존에스엔씨 (2024.07 ~ 현재)**\n- QSIS 외주 프로젝트 프론트엔드 개발 담당\n- HanWha Vision Toolbox2 React 기능 추가/수정 개발\n\n**투바이트 (2021.06 ~ 2024.02)**\n- 다수 기업 공식 홈페이지 프론트엔드 개발 및 유지보수\n- React.js, TypeScript 기반 모던 웹 애플리케이션 구축\n- 사내 툴 개발을 통한 업무 효율성 개선 (Excel-JSON 변환 툴)\n\n**게임덱스 (2017.11 ~ 2021.06)**\n- 번역 업무 지원 웹 도구 개발 (Node.js, jQuery)\n- 다국어 현지화 프로젝트 다수 참여\n\n■ 개발 철학 및 접근 방식\n\n사용자 경험(UX)을 최우선으로 하는 개발을 추구합니다. 단순히 기능을 구현하는 것을 넘어서, 사용자가 직관적이고 편리하게 사용할 수 있는 인터페이스 설계에 중점을 둡니다. 또한 지속적인 학습을 통해 최신 기술 트렌드를 적극 도입하여 프로젝트의 품질과 유지보수성을 향상시키고 있습니다.\n\n■ 향후 목표\n\n웹 기술의 지속적인 발전에 발맞춰 풀스택 개발자로의 성장을 목표로 하고 있으며, 특히 사용자 중심의 혁신적인 웹 서비스 개발에 기여하고자 합니다.",
-  "about-me-tip": "■ 개인적 특성\n\n• 건강한 라이프스타일을 추구하며, 금연자입니다.\n• 업무와 개인 시간의 균형을 중시합니다.\n• 취미: 모바일 게임(Clash Royale), 영화 감상을 통한 창의적 영감 획득"
+  "about-me-tip": "■ 개인적 특성\n\n• 건강한 라이프스타일을 추구하며, 금연자입니다.\n• 업무와 개인 시간의 균형을 중시합니다.\n• 취미: 모바일 게임(Clash Royale), 영화 감상을 통한 창의적 영감 획득",
+  "education-certificate": "학력 인증서 확인",
+  "education-subtitle": "학력 및 교육 이력",
+  "experience-subtitle": "전문 경력과 성장 여정",
+  "portfolio-subtitle": "다양한 프로젝트 경험을 확인해보세요",
+  "skillset-subtitle": "전문 기술 스택과 도구들"
 }

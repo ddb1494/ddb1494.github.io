@@ -10,7 +10,7 @@
   "experiences": [
     {
       "name": "Farmzone",
-      "time": "2024/07 ~ 2025/03",
+      "time": "2024/07 ~ 2025/03 （8个月）",
       "desc": "QSIS前端React开发及维护。",
       "status": "재직중"
     },
@@ -102,5 +102,10 @@
   "blood-type-a": "血型 A型",
   "about-me": "关于我",
   "about-me-article": "■ 专业能力及工作概述\n\n具备6年Web开发经验，专精前端开发领域，成功完成多个企业级项目。在React生态系统和现代Web技术应用方面拥有丰富的实战经验，致力于打造以用户为中心的优质界面。\n\n■ 核心技术栈及专业领域\n\n• 前端技术: React, TypeScript, Vite, Next.js\n• UI/UX: Ant Design, MUI, 响应式Web设计\n• 状态管理: React Query, Context API\n• 开发工具: VSCode, Git, GitHub, Docker\n• 协作工具: Slack, Jira, Figma\n\n■ 主要成果及项目经验\n\n**Farmzone SNC (2024.07 ~ 至今)**\n- 负责QSIS外包项目前端开发\n- HanWha Vision Toolbox2 React功能开发与维护\n\n**2Bytes Corp (2021.06 ~ 2024.02)**\n- 多家企业官网前端开发及维护\n- 基于React.js、TypeScript构建现代化Web应用\n- 开发内部工具提升业务效率 (Excel-JSON转换工具)\n\n**GameDex (2017.11 ~ 2021.06)**\n- 开发翻译业务支持Web工具 (Node.js, jQuery)\n- 参与多个多语言本地化项目\n\n■ 开发理念及工作方式\n\n始终以用户体验(UX)为核心进行开发。不仅仅是实现功能，更注重设计直观便捷的用户界面。通过持续学习积极引入最新技术趋势，不断提升项目质量和可维护性。\n\n■ 未来目标\n\n紧跟Web技术发展趋势，目标成长为全栈开发工程师，特别希望在以用户为中心的创新Web服务开发方面贡献自己的力量。",
-  "about-me-tip": "■ 个人特质\n\n• 追求健康的生活方式，无吸烟习惯\n• 重视工作与个人时间的平衡\n• 兴趣爱好: 手游《皇室战争》、电影欣赏，通过娱乐获取创意灵感"
+  "about-me-tip": "■ 个人特质\n\n• 追求健康的生活方式，无吸烟习惯\n• 重视工作与个人时间的平衡\n• 兴趣爱好: 手游《皇室战争》、电影欣赏，通过娱乐获取创意灵感",
+  "education-certificate": "查看学历证书",
+  "education-subtitle": "学历及教育履历",
+  "experience-subtitle": "专业经历与成长历程",
+  "portfolio-subtitle": "查看丰富的项目经验",
+  "skillset-subtitle": "专业技术栈与开发工具"
 }
