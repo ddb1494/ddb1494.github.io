@@ -11,46 +11,50 @@
     {
       "name": "Farmzone",
       "time": "2024/07 ~ 2025/03 （8个月）",
-      "desc": "QSIS前端React开发及维护。",
-      "status": "재직중"
+      "desc": "【React前端开发】\n2024.07 ~ 2024.11 Our Home QSIS外包开发\n2024.11 ~ 至今 HanWha Vision Toolbox2开发 React功能增加/修改外包开发",
+      "published": true
     },
     {
       "name": "2bytescorp株式会社",
       "time": "2021/06 ~ 2024/02 （2年9个月）",
-      "desc": "【官网前端开发】\n2byes官网前端开发及维护。（React.js, gsap, jQuery, NotionAPI, SlackAPI）\nPenta官网前端开发及维护，重新开发。（React.js, TypeScript, React-Query, SlackAPI）\nSpacegears.game官网前端开发及维护。（React.js, TypeScript, gsap, mui）\nboracat.io官网前端开发。 （Next.js, TypeScript, date-fns, mui）\n\n公司内部专用工具\njson文件与Excel文件的格式转换类工具的开发。（React.js, Electron）",
-      "status": "劝退离职"
+      "desc": "【官网前端开发】\n2bytescorp官网前端开发及维护。（React.js, gsap, jQuery, NotionAPI, SlackAPI）\nPentapeak官网前端开发及维护、重新开发。（React.js, TypeScript, React-Query, SlackAPI）\nSpacegears官网前端开发及维护。（React.js, TypeScript, gsap, mui）\nBoracat官网前端开发及维护。（Next.js, TypeScript, date-fns, mui）\n\n【内部工具开发】\njson文件与Excel文件相互转换工具的开发。（React.js, Electron）",
+      "published": true
     },
     {
       "name": "GameDex株式会社",
       "time": "2017/11 ~ 2021/06 （3年8个月）",
-      "desc": "【中韩翻译】\n参与项目包含“航海冲突”、“炮艇战：3D直升机”、“加勒比海盗：战争之潮”、“秦始皇”、“Game of Dice”、“街头篮球”、“Bless M”、“创世纪战：安塔利亚战争”、“钢铁坦克”、“穿越火线：战争地带”、以及其他外包项目。\n\n【开发翻译工具】\n开发有助于翻译的小工具。（前端：主要用jQuery开发 / 后端：使用Node.js进行开发后发布到aws）",
-      "status": "离职"
+      "desc": "【翻译工具开发】\n开发有助于翻译的Web工具。（前端：HTML, jQuery, CSS / 后端：Node.js开发后aws部署）\n\n【中文本地化翻译】\n参与过的项目有：【Ocean&Empire】、【Gunship Battle: Total Warfare】、【加勒比海盗：战争之潮】、【秦始皇】、【骰子之神】、【Freestyle】、【Bless M】、【创世纪战：安塔利亚战争】、【Iron Tank】、【CrossFire: Warzone】及其他外包等。",
+      "published": true
     },
     {
-      "name": "盛大网络（中国）",
+      "name": "sdo（盛大网络）",
       "time": "2007/12 ~ 2010/12 （3年1个月）",
-      "desc": "【游戏运行策划】\n游戏活动策划及GM运营工具编程。\n\n【中日翻译】\n会议翻译、文件翻译、海外对接。收集海外游戏业界动向。",
-      "status": "离职"
+      "desc": "【游戏策划运营】\n游戏活动策划及游戏管理员运营工具Web编程。\n\n【中日韩翻译】\n文档翻译、会议口译。海外游戏业界动向收集。",
+      "url": "https://www.shengqugames.com/cn/index",
+      "published": true
     },
     {
-      "name": "PangGame, Longtu, JoyCity, 奥黁, 文友, 幸运草工艺品有限公司",
-      "time": "2006/01 - 2017/10 (大约5年)",
-      "desc": "排列了非编程岗位工作经历的公司名称。",
-      "status": "离职"
+      "name": "PangGame株式会社、Longtu株式会社、JoyCity株式会社、奥黁、文友、幸运草工艺品有限公司",
+      "time": "2006/09 - 2017/11 （约5年）",
+      "desc": "翻译工作为主。",
+      "published": false
     }
   ],
   "educations": [
     {
       "name": "延边大学",
-      "time": "2002/09 - 2006/06 （4年制）",
-      "desc": "语言文学教育专业  -  海外（中国）",
-      "status": "学士 毕业"
+      "time": "2002/09 ~ 2006/06 （4年制）",
+      "desc": "语言文学教育学科  -  中国",
+      "status": "学士毕业",
+      "link": "https://www.chsi.com.cn/xlrz/bgcx.jsp?v=7223389-11-2E9B32FB",
+      "published": true
     },
     {
       "name": "延边第一高等中学",
-      "time": "1999/09 - 2002/06 （3年制）",
-      "desc": "日语班  -  海外（中国）",
-      "status": "毕业"
+      "time": "1999/09 ~ 2002/06 （3年制）",
+      "desc": "日语班  -  中国",
+      "status": "毕业",
+      "published": true
     }
   ],
   "cultures": [
@@ -80,6 +84,10 @@
   "ko": "韩语",
   "zh-CN": "简体中文",
   "jp": "日语",
+  "birth-label": "出生日期",
+  "address-label": "居住地",
+  "position-label": "职务",
+  "experience-label": "经验",
   "kakaotalk": "Kakao Talk 1:1",
   "qsis": "QSIS",
   "qsis-hostname": "qsis.ourhome.co.kr",
@@ -98,6 +106,67 @@
   "ui79-info": "个人项目：\n前端1人+后端1人。\n前端开发及运营。\nReact, PWA。",
   "resume": "简历",
   "portfolio": "作品集",
+  "view": "查看",
+  "detail": "详细信息",
+  "frontend": "前端",
+  "backend": "后端",
+  "database": "数据库",
+  "key-features": "主要功能",
+  "portfolios": [
+    {
+      "title": "TM6",
+      "description": "任务管理PWA应用",
+      "frontend": "React, TypeScript, Vite",
+      "backend": "Express, Sequelize, Node",
+      "database": "Postgres",
+      "outcome-url": "https://tm6.cihot.com",
+      "features": "实时任务管理，离线支持，响应式设计"
+    },
+    {
+      "title": "Job Korea 浏览器扩展",
+      "description": "招聘信息筛选浏览器扩展",
+      "frontend": "JavaScript, HTML5, CSS3",
+      "backend": "Chrome Extension API",
+      "database": "Local Storage",
+      "features": "自动筛选，书签功能，搜索优化",
+      "detail-url": "/portfolios/jobkorea"
+    },
+    {
+      "title": "2Bytes Corp 官方网站",
+      "description": "企业官方主页",
+      "frontend": "React, GSAP, jQuery",
+      "backend": "NotionAPI, SlackAPI",
+      "database": "Notion Database",
+      "outcome-url": "https://2bytescorp.com",
+      "features": "动画效果，SEO优化，管理员仪表板"
+    },
+    {
+      "title": "Pentapeak Studios",
+      "description": "游戏工作室作品集网站",
+      "frontend": "React, TypeScript, React-Query",
+      "backend": "SlackAPI",
+      "database": "JSON API",
+      "outcome-url": "https://pentapeakstudios.com",
+      "features": "游戏作品集画廊，新闻系统，团队介绍"
+    },
+    {
+      "title": "Space Gears",
+      "description": "手机游戏官方网站",
+      "frontend": "React, TypeScript, MUI",
+      "backend": "REST API",
+      "database": "MySQL",
+      "outcome-url": "https://spacegears.game",
+      "features": "游戏攻略，活动页面，社区功能"
+    },
+    {
+      "title": "翻译支持工具",
+      "description": "游戏本地化Web工具",
+      "frontend": "HTML, jQuery, CSS",
+      "backend": "Node.js, Express",
+      "database": "MongoDB",
+      "features": "术语管理，翻译进度跟踪，质量检查"
+    }
+  ],
   "job-description": "工作描述",
   "blood-type-a": "血型 A型",
   "about-me": "关于我",

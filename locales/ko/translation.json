@@ -12,32 +12,32 @@
       "name": "(주)팜존에스엔씨",
       "time": "2024/07 ~ 2025/03 (8개월)",
       "desc": "[React 프론트엔드 개발]\n2024.07 ~ 2024.11 Our Home QSIS 외주 개발\n2024.11 ~ 현재 HanWha Vision Toolbox2 개발 React 추가/수정 외주 개발",
-      "status": "재직중"
+      "published": true
     },
     {
       "name": "투바이트(주)",
       "time": "2021/06 ~ 2024/02 (2년 9개월)",
       "desc": "[공홈 프론트엔드 개발]\n투바이트 공식 홈페이지 프론트엔드 개발 및 유지보수. (React.js, gsap, jQuery, NotionAPI, SlackAPI)\n펜타피크 공식 홈페이지 프론트엔드 개발 및 유지보수 및 재개발. (React.js, TypeScript, React-Query, SlackAPI)\n스페이스기어스 공식 홈페이지 프론트엔드 개발 및 유지보수. (React.js, TypeScript, gsap, mui)\n보라캣이 공식 홈페이지 프론트엔드 개발 및 유지보수. (Next.js, TypeScript, date-fns, mui)\n\n[사내 툴 개발]\njson 파일과 Excel 파일을 서로 전환하는 툴의 개발을 주도했습니다. (React.js, Electron)",
-      "status": "권고사직"
+      "published": true
     },
     {
       "name": "(주)게임덱스",
       "time": "2017/11 ~ 2021/06 (3년 8개월)",
       "desc": "[번역툴 개발]\n번역에 도움이 되는 웹툴 개발. (프론트엔드: HTML, jQuery, CSS / 백엔드: Node.js 개발후 aws 배포)\n\n[중국어 현지화 번역]\n참여 했던 프로젝트는 [오션앤엠파이어], [건쉽배틀:토탈워페어], [캐리비안의 해적: 전쟁의물결], [진시황], [주사위의 신], [프리스타일], [블레스M], [창세기전: 안타리아의 전쟁], [아이언탱크], [크로스파이어:워존] 및 기타 외주 등등 입니다.",
-      "status": "이직"
+      "published": true
     },
     {
       "name": "sdo (盛大网络)",
       "time": "2007/12 ~ 2010/12 (3년 1개월)",
       "desc": "[게임기획운영]\n게임 이벤트 기획 및 게임 마스터 운영툴 웹코딩.\n\n[중국어 일본어 번역]\n문서 번역, 회의 통역. 해외 게임 업계 동향 수집.",
-      "status": "이직",
-      "url": "https://www.shengqugames.com/cn/index"
+      "url": "https://www.shengqugames.com/cn/index",
+      "published": true
     },
     {
-      "name": "(주)팡게임, (주)룽투, (주)조이시티, 奥黁, 文友, 幸运草工艺品有限公司",
+      "name": "(주)팡게임, (주)룽투, (주)조이시티, 奥黁, 文友, 幸运草工艺품有限公司",
       "time": "2006/09 - 2017/11 (약 5년)",
-      "desc": "개발 경력이 아닌 회사만 따로 모아둠.",
-      "status": "이직"
+      "desc": "주로 번역 업무 위주.",
+      "published": false
     }
   ],
   "educations": [
@@ -46,13 +46,15 @@
       "time": "2002/09 ~ 2006/06 (4년제)",
       "desc": "언어 문학 교육 학과  -  중국",
       "status": "학사 졸업",
-      "link": "https://www.chsi.com.cn/xlrz/bgcx.jsp?v=7223389-11-2E9B32FB"
+      "link": "https://www.chsi.com.cn/xlrz/bgcx.jsp?v=7223389-11-2E9B32FB",
+      "published": true
     },
     {
       "name": "연변제일고등학교",
       "time": "1999/09 ~ 2002/06 (3년제)",
       "desc": "일본어 반  -  중국",
-      "status": "졸업"
+      "status": "졸업",
+      "published": false
     }
   ],
   "cultures": [
@@ -82,6 +84,10 @@
   "ko": "한국어",
   "zh-CN": "중국어",
   "jp": "일본어",
+  "birth-label": "생년월일",
+  "address-label": "거주지",
+  "position-label": "직무",
+  "experience-label": "경험",
   "kakaotalk": "카카오톡 1:1",
   "qsis": "QSIS",
   "qsis-hostname": "qsis.ourhome.co.kr",
@@ -100,14 +106,65 @@
   "ui79-info": "개인 프로젝트:\n프론트 1명 + 백엔드 1명.\n프론트 개발 및 운영.\nReact, PWA",
   "resume": "이력서",
   "portfolio": "포트폴리오",
+  "view": "보기",
+  "detail": "상세보기",
+  "frontend": "프론트엔드",
+  "backend": "백엔드",
+  "database": "데이터베이스",
+  "key-features": "주요 기능",
   "portfolios": [
     {
       "title": "TM6",
-      "description": "PWA",
+      "description": "할 일 관리 PWA 앱",
       "frontend": "React, TypeScript, Vite",
       "backend": "Express, Sequelize, Node",
       "database": "Postgres",
-      "outcome-url": "https://tm6.cihot.com"
+      "outcome-url": "https://tm6.cihot.com",
+      "features": "실시간 할 일 관리, 오프라인 지원, 반응형 디자인"
+    },
+    {
+      "title": "잡코리아 확장 프로그램",
+      "description": "채용 정보 필터링 브라우저 확장",
+      "frontend": "JavaScript, HTML5, CSS3",
+      "backend": "Chrome Extension API",
+      "database": "Local Storage",
+      "features": "자동 필터링, 북마크 기능, 검색 개선",
+      "detail-url": "/portfolios/jobkorea"
+    },
+    {
+      "title": "투바이트 공식 웹사이트",
+      "description": "기업 공식 홈페이지",
+      "frontend": "React, GSAP, jQuery",
+      "backend": "NotionAPI, SlackAPI",
+      "database": "Notion Database",
+      "outcome-url": "https://2bytescorp.com",
+      "features": "애니메이션 효과, SEO 최적화, 관리자 대시보드"
+    },
+    {
+      "title": "펜타피크 스튜디오",
+      "description": "게임 스튜디오 포트폴리오 사이트",
+      "frontend": "React, TypeScript, React-Query",
+      "backend": "SlackAPI",
+      "database": "JSON API",
+      "outcome-url": "https://pentapeakstudios.com",
+      "features": "게임 포트폴리오 갤러리, 뉴스 시스템, 팀 소개"
+    },
+    {
+      "title": "스페이스기어스",
+      "description": "모바일 게임 공식 웹사이트",
+      "frontend": "React, TypeScript, MUI",
+      "backend": "REST API",
+      "database": "MySQL",
+      "outcome-url": "https://spacegears.game",
+      "features": "게임 가이드, 이벤트 페이지, 커뮤니티 기능"
+    },
+    {
+      "title": "번역 지원 도구",
+      "description": "게임 현지화를 위한 웹 도구",
+      "frontend": "HTML, jQuery, CSS",
+      "backend": "Node.js, Express",
+      "database": "MongoDB",
+      "features": "용어집 관리, 번역 진행률 추적, 품질 검사"
     }
   ],
   "job-description": "경력기술서",
