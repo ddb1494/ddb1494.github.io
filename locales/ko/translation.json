@@ -11,19 +11,19 @@
     {
       "name": "(주)팜존에스엔씨",
       "time": "2024/07 ~ 2025/03 (8개월)",
-      "desc": "[React 프론트엔드 개발]\n2024.07 ~ 2024.11 Our Home QSIS 외주 개발\n2024.11 ~ 현재 HanWha Vision Toolbox2 개발 React 추가/수정 외주 개발",
+      "desc": "- 아워홈 웹 FE 개발\n    사용 스택: React, TypeScript, ReactQuery, AntDesign UI\n\n- 한화비전 웹 FE 개발\n    사용 스택: React, TypeScript, ReactQuery, AntDesign UI",
       "published": true
     },
     {
       "name": "투바이트(주)",
       "time": "2021/06 ~ 2024/02 (2년 9개월)",
-      "desc": "[공홈 프론트엔드 개발]\n투바이트 공식 홈페이지 프론트엔드 개발 및 유지보수. (React.js, gsap, jQuery, NotionAPI, SlackAPI)\n펜타피크 공식 홈페이지 프론트엔드 개발 및 유지보수 및 재개발. (React.js, TypeScript, React-Query, SlackAPI)\n스페이스기어스 공식 홈페이지 프론트엔드 개발 및 유지보수. (React.js, TypeScript, gsap, mui)\n보라캣이 공식 홈페이지 프론트엔드 개발 및 유지보수. (Next.js, TypeScript, date-fns, mui)\n\n[사내 툴 개발]\njson 파일과 Excel 파일을 서로 전환하는 툴의 개발을 주도했습니다. (React.js, Electron)",
+      "desc": "- 투바이트 웹 FE 개발 및 운영\n    사용 스택: React, gsap, jQuery, NotionAPI, SlackAPI, styled-components\n\n- 펜타피크 웹 FE 개발 및 운영 및 재개발\n    사용 스택: React, TypeScript, React-Query, SlackAPI, styled-components\n\n- 스페이스기어스 웹 FE 개발 및 운영\n    사용 스택: React, TypeScript, gsap, MUI, React-Query, styled-components\n\n- 보라캣 웹 FE 개발 및 운영\n    사용 스택: Next, TypeScript, date-fns, MUI, Zustand, React-Query\n\n- 게임용 번역 파일 전환툴 개발 (json & Excel 파일 전환)\n  사용 스택: React, AntDesign UI, Electron",
       "published": true
     },
     {
       "name": "(주)게임덱스",
       "time": "2017/11 ~ 2021/06 (3년 8개월)",
-      "desc": "[번역툴 개발]\n번역에 도움이 되는 웹툴 개발. (프론트엔드: HTML, jQuery, CSS / 백엔드: Node.js 개발후 aws 배포)\n\n[중국어 현지화 번역]\n참여 했던 프로젝트는 [오션앤엠파이어], [건쉽배틀:토탈워페어], [캐리비안의 해적: 전쟁의물결], [진시황], [주사위의 신], [프리스타일], [블레스M], [창세기전: 안타리아의 전쟁], [아이언탱크], [크로스파이어:워존] 및 기타 외주 등등 입니다.",
+      "desc": "[번역툴 개발]\n번역에 도움이 되는 웹툴 개발\n  FE: HTML, jQuery, css\n  BE: Node.js, aws 배포\n\n[중국어 현지화 번역]\n참여 했던 프로젝트는 [오션앤엠파이어], [건쉽배틀:토탈워페어], [캐리비안의 해적: 전쟁의물결], [진시황], [주사위의 신], [프리스타일], [블레스M], [창세기전: 안타리아의 전쟁], [아이언탱크], [크로스파이어:워존] 및 기타 외주 등등 입니다.",
       "published": true
     },
     {
@@ -44,7 +44,7 @@
     {
       "name": "연변대학교",
       "time": "2002/09 ~ 2006/06 (4년제)",
-      "desc": "언어 문학 교육 학과  -  중국",
+      "desc": "언어 문학 교육 학과",
       "status": "학사 졸업",
       "link": "https://www.chsi.com.cn/xlrz/bgcx.jsp?v=7223389-11-2E9B32FB",
       "published": true
@@ -52,7 +52,7 @@
     {
       "name": "연변제일고등학교",
       "time": "1999/09 ~ 2002/06 (3년제)",
-      "desc": "일본어 반  -  중국",
+      "desc": "일본어 반",
       "status": "졸업",
       "published": false
     }
