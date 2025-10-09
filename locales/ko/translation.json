@@ -17,7 +17,7 @@
     {
       "name": "투바이트(주)",
       "time": "2021/06 ~ 2024/02 (2년 9개월)",
-      "desc": "- 투바이트 웹 FE 개발 및 운영\n    사용 스택: React, gsap, jQuery, NotionAPI, SlackAPI, styled-components\n\n- 펜타피크 웹 FE 개발 및 운영 및 재개발\n    사용 스택: React, TypeScript, React-Query, SlackAPI, styled-components\n\n- 스페이스기어스 웹 FE 개발 및 운영\n    사용 스택: React, TypeScript, gsap, MUI, React-Query, styled-components\n\n- 보라캣 웹 FE 개발 및 운영\n    사용 스택: Next, TypeScript, date-fns, MUI, Zustand, React-Query\n\n- 게임용 번역 파일 전환툴 개발 (json & Excel 파일 전환)\n  사용 스택: React, AntDesign UI, Electron",
+      "desc": "[Front-End 웹 개발]\n\n- 투바이트 공식 홈페이지 개발 및 운영\n\t사용 스택: React, gsap, jQuery, NotionAPI, SlackAPI, styled-components\n\n- 펜타피크 공식 홈페이지 개발 및 운영 및 재개발\n\t사용 스택: React, TypeScript, React-Query, SlackAPI, styled-components\n\n- 스페이스기어스 공식 홈페이지 개발 및 운영\n\t사용 스택: React, TypeScript, gsap, MUI, React-Query, styled-components\n\n- 보라캣 공식 홈페이지 개발 및 운영\n\t사용 스택: Next, TypeScript, date-fns, MUI, Zustand, React-Query\n\n- 게임용 번역 파일 전환툴 개발 (json & Excel 파일 전환)\n\t사용 스택: React, AntDesign UI, Electron",
       "published": true
     },
     {
