@@ -9,34 +9,130 @@
   "experience-info": "韩语翻译(10年)",
   "experiences": [
     {
-      "name": "Farmzone",
+      "name": "Farmzone SNC",
       "time": "2024/07 ~ 2025/03 （8个月）",
-      "desc": "【React前端开发】\n2024.07 ~ 2024.11 Our Home QSIS外包开发\n2024.11 ~ 至今 HanWha Vision Toolbox2开发 React功能增加/修改外包开发",
+      "projects": [
+        {
+          "title": "Our Home QSIS外包开发",
+          "summary": "提升系统稳定性并成功完成系统建设",
+          "techStack": ["React", "TypeScript", "React Query", "Ant Design"],
+          "role": "项目收尾阶段紧急加入，负责运维开发。快速解决主要故障（Critical/Major），确保系统稳定。根据运维团队需求开发新功能。",
+          "contribution": "诊断数据一致性问题，利用React Query缓存策略，严格应用TypeScript以最小化运行时错误。",
+          "outcome": "圆满完成最终需求，系统零故障交付，顺利移交客户（Our Home），SI项目成功收官。"
+        },
+        {
+          "title": "Hanwha Vision Web FE开发",
+          "summary": "提升运维稳定性与高质量管理",
+          "techStack": ["React", "TypeScript", "React Query", "Ant Design UI"],
+          "role": "收尾阶段紧急加入，负责系统稳定与维护。改善代码质量，满足客户编码风格与静态分析标准，修复Bug并开发新功能。",
+          "challenge": "严格遵守客户编码风格/静态分析标准，临近交付时Figma UI变更及代码理解多重挑战。",
+          "solution": "ESLint/Prettier自动化，利用高效调试与TypeScript隔离变更副作用。",
+          "outcome": "满足客户高标准代码与质量要求，顺利通过最终验收与交付，助力服务稳定。"
+        }
+      ],
       "published": true
     },
     {
-      "name": "2bytescorp株式会社",
+      "name": "2Bytes Corp",
       "time": "2021/06 ~ 2024/02 （2年9个月）",
-      "desc": "【官网前端开发】\n2bytescorp官网前端开发及维护。（React.js, gsap, jQuery, NotionAPI, SlackAPI）\nPentapeak官网前端开发及维护、重新开发。（React.js, TypeScript, React-Query, SlackAPI）\nSpacegears官网前端开发及维护。（React.js, TypeScript, gsap, mui）\nBoracat官网前端开发及维护。（Next.js, TypeScript, date-fns, mui）\n\n【内部工具开发】\njson文件与Excel文件相互转换工具的开发。（React.js, Electron）",
+      "projects": [
+        {
+          "title": "2Bytes Corp官网开发与维护",
+          "summary": "与策划团队（Jira）、设计团队（Figma）协作，建设与维护企业官网",
+          "techStack": ["React", "gsap", "jQuery", "NotionAPI", "SlackAPI", "styled-components"],
+          "role": "从零开发并持续负责官网运维",
+          "contribution": "集成Notion与Slack，实时协作策划（Jira）与设计（Figma）团队，实现内容与通知自动化。",
+          "outcome": "强化企业线上品牌，提升内部协作效率。"
+        },
+        {
+          "title": "Pentapeak官网开发/运维",
+          "summary": "与策划团队（Jira）、设计团队（Figma）协作，游戏工作室官网升级",
+          "techStack": ["React", "TypeScript", "React-Query", "SlackAPI", "styled-components"],
+          "role": "从项目初期参与，基于TypeScript与React-Query重构并运维",
+          "contribution": "与策划（Jira）、设计（Figma）团队紧密协作，提升代码质量与数据管理效率。",
+          "outcome": "实现稳定运维与高效开发。"
+        },
+        {
+          "title": "Spacegears官网开发与运维",
+          "summary": "与策划团队（Jira）、设计团队（Figma）协作，打造品牌官网",
+          "techStack": ["React", "TypeScript", "gsap", "MUI", "React-Query", "styled-components"],
+          "role": "负责响应式官网开发与运维",
+          "contribution": "gsap高质量动画UX，MUI提升开发效率，协作策划（Jira）与设计（Figma）团队优化UI/UX。",
+          "outcome": "提升品牌认知与用户体验。"
+        },
+        {
+          "title": "Boracat官网开发与运维",
+          "summary": "与策划团队（Jira）、设计团队（Figma）协作，SEO优化与状态管理系统建设",
+          "techStack": ["Next.js", "TypeScript", "date-fns", "MUI", "Zustand", "React-Query"],
+          "role": "基于Next.js实现SEO优化与全局状态管理",
+          "contribution": "集成Zustand与Next.js，协作策划（Jira）与设计（Figma）团队提升开发与运维效率。",
+          "outcome": "提升搜索曝光与维护效率。"
+        },
+        {
+          "title": "游戏翻译文件转换工具开发",
+          "summary": "独立开发的桌面端效率工具",
+          "techStack": ["React", "AntDesign UI", "Electron"],
+          "role": "全流程独立策划、设计与开发桌面工具",
+          "contribution": "独立设计并实现基于Electron的跨平台文件转换工具。",
+          "outcome": "自动化内部翻译流程，提升效率。"
+        }
+      ],
       "published": true
     },
     {
-      "name": "GameDex株式会社",
+      "name": "GameDex",
       "time": "2017/11 ~ 2021/06 （3年8个月）",
-      "desc": "【翻译工具开发】\n开发有助于翻译的Web工具。（前端：HTML, jQuery, CSS / 后端：Node.js开发后aws部署）\n\n【中文本地化翻译】\n参与过的项目有：【Ocean&Empire】、【Gunship Battle: Total Warfare】、【加勒比海盗：战争之潮】、【秦始皇】、【骰子之神】、【Freestyle】、【Bless M】、【创世纪战：安塔利亚战争】、【Iron Tank】、【CrossFire: Warzone】及其他外包等。",
+      "projects": [
+        {
+          "title": "翻译工具开发",
+          "summary": "提升翻译效率的Web工具开发",
+          "techStack": ["HTML", "jQuery", "CSS", "Node.js", "AWS"],
+          "role": "前端：HTML, jQuery, CSS / 后端：Node.js, AWS部署",
+          "contribution": "开发并上线有助于翻译的Web工具。",
+          "outcome": "自动化公司翻译流程，提升质量。"
+        },
+        {
+          "title": "中文本地化翻译",
+          "summary": "全球游戏中文本地化与质量管理",
+          "techStack": ["中文翻译", "游戏本地化", "QA"],
+          "role": "负责多款游戏的中文翻译、本地化与术语统一，翻译质量管理。",
+          "contribution": "参与Ocean&Empire、Gunship Battle: Total Warfare、加勒比海盗：战争之潮、秦始皇、骰子之神、Freestyle、Bless M、创世纪战：安塔利亚战争、Iron Tank、CrossFire: Warzone等主要项目的翻译与本地化QA。",
+          "outcome": "保障全球服务进度，提升本地化质量与玩家沉浸感。"
+        }
+      ],
       "published": true
     },
     {
       "name": "sdo（盛大网络）",
       "time": "2007/12 ~ 2010/12 （3年1个月）",
-      "desc": "【游戏策划运营】\n游戏活动策划及游戏管理员运营工具Web编程。\n\n【中日韩翻译】\n文档翻译、会议口译。海外游戏业界动向收集。",
+      "projects": [
+        {
+          "title": "游戏策划与运营工具开发",
+          "summary": "游戏活动策划与运营工具Web开发",
+          "role": "负责游戏活动策划与GM运营工具Web开发",
+          "outcome": "提升运营效率，实现活动管理自动化。"
+        },
+        {
+          "title": "中日韩翻译与口译",
+          "summary": "文档翻译、会议口译、行业情报收集",
+          "role": "负责中日韩文档翻译、会议口译、海外游戏行业情报收集",
+          "outcome": "支持全球沟通与信息收集。"
+        }
+      ],
       "url": "https://www.shengqugames.com/cn/index",
       "published": true
     },
     {
-      "name": "PangGame株式会社、Longtu株式会社、JoyCity株式会社、奥黁、文友、幸运草工艺品有限公司",
+      "name": "PangGame、Longtu、JoyCity、奥黁、文友、幸运草工艺品有限公司",
       "time": "2006/09 - 2017/11 （约5年）",
-      "desc": "翻译工作为主。",
+      "projects": [
+        {
+          "title": "游戏翻译与本地化",
+          "summary": "多款游戏及文档翻译工作",
+          "role": "负责中/日/韩游戏及文档翻译与本地化支持",
+          "outcome": "助力全球游戏本地化与沟通。"
+        }
+      ],
       "published": false
     }
   ],

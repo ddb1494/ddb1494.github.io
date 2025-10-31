@@ -11,32 +11,128 @@
     {
       "name": "(주)팜존에스엔씨",
       "time": "2024/07 ~ 2025/03 (8개월)",
-      "desc": "- 아워홈 웹 FE 개발\n    사용 스택: React, TypeScript, ReactQuery, AntDesign UI\n\n- 한화비전 웹 FE 개발\n    사용 스택: React, TypeScript, ReactQuery, AntDesign UI",
+      "projects": [
+        {
+          "title": "아워홈 QSIS 외주 개발",
+          "summary": "운영 안정화 기여 및 시스템 구축 완료",
+          "techStack": ["React", "TypeScript", "React Query", "Ant Design"],
+          "role": "프로젝트 마감 단계 긴급 투입, 운영 개발 담당. 주요 오류(Critical/Major) 신속 해결 및 시스템 안정성 확보. 운영팀 요구 기반 신규 기능 추가 개발",
+          "contribution": "데이터 정합성 문제 진단, React Query 캐싱 전략 활용, TypeScript 엄격 적용으로 런타임 오류 최소화",
+          "outcome": "최종 요구사항 완수 및 오류 없는 시스템 구축, 고객사(아워홈)에 안정적 인수인계, SI 프로젝트 성공적 마감"
+        },
+        {
+          "title": "한화비전 웹 FE 개발",
+          "summary": "운영 안정화 및 고도화된 품질 관리 기여",
+          "techStack": ["React", "TypeScript", "React Query", "Ant Design UI"],
+          "role": "마감 단계 긴급 투입, 시스템 안정화 및 유지보수. 고객사 코딩 스타일/정적 분석 기준 충족, 코드 품질 개선 및 버그/기능 추가",
+          "challenge": "고객사 표준의 엄격한 코딩 스타일/정적 분석 기준 준수, 마감 직전 Figma UI 변경 및 코드 파악의 다중 어려움",
+          "solution": "ESLint/Prettier 자동화, 효율적 디버깅/TypeScript로 변경 부수 효과 격리",
+          "outcome": "고객사 품질 표준 만족, 최종 검수/인수인계 완료, 서비스 안정화 기여"
+        }
+      ],
       "published": true
     },
     {
       "name": "투바이트(주)",
       "time": "2021/06 ~ 2024/02 (2년 9개월)",
-      "desc": "[Front-End 웹 개발]\n\n- 투바이트 공식 홈페이지 개발 및 운영\n\t사용 스택: React, gsap, jQuery, NotionAPI, SlackAPI, styled-components\n\n- 펜타피크 공식 홈페이지 개발 및 운영 및 재개발\n\t사용 스택: React, TypeScript, React-Query, SlackAPI, styled-components\n\n- 스페이스기어스 공식 홈페이지 개발 및 운영\n\t사용 스택: React, TypeScript, gsap, MUI, React-Query, styled-components\n\n- 보라캣 공식 홈페이지 개발 및 운영\n\t사용 스택: Next, TypeScript, date-fns, MUI, Zustand, React-Query\n\n- 게임용 번역 파일 전환툴 개발 (json & Excel 파일 전환)\n\t사용 스택: React, AntDesign UI, Electron",
+      "projects": [
+        {
+          "title": "투바이트 공식 홈페이지 개발 및 운영",
+          "summary": "기획팀(Jira), 디자인팀(Figma)과 협업한 기업 공식 웹사이트 구축 및 유지보수",
+          "techStack": ["React", "gsap", "jQuery", "NotionAPI", "SlackAPI", "styled-components"],
+          "role": "초기부터 웹사이트 개발 및 지속적인 운영/유지보수 담당",
+          "contribution": "Notion 및 Slack 연동, 기획팀(Jira)·디자인팀(Figma)과의 실시간 협업 및 콘텐츠/알림 자동화 구현",
+          "outcome": "기업 온라인 브랜딩 강화 및 사내 업무 효율화"
+        },
+        {
+          "title": "펜타피크 공식 홈페이지 개발/운영",
+          "summary": "기획팀(Jira), 디자인팀(Figma)과 협업한 게임 스튜디오 공식 웹사이트 고도화",
+          "techStack": ["React", "TypeScript", "React-Query", "SlackAPI", "styled-components"],
+          "role": "초기부터 개발 투입, TypeScript 및 React-Query 기반으로 개발 및 운영",
+          "contribution": "개발 및 유지보수 과정에서 기획팀(Jira), 디자인팀(Figma)과의 긴밀한 협업, 코드 품질 향상 및 데이터 관리 효율성 증대",
+          "outcome": "안정적 운영 및 유지보수, 개발 생산성 향상"
+        },
+        {
+          "title": "스페이스기어스 공식 홈페이지 개발 및 운영",
+          "summary": "기획팀(Jira), 디자인팀(Figma)과 협업한 모바일 게임 브랜드 아이덴티티 반영 웹사이트 구축",
+          "techStack": ["React", "TypeScript", "gsap", "MUI", "React-Query", "styled-components"],
+          "role": "반응형 웹사이트 구축 및 운영",
+          "contribution": "gsap을 활용한 고품질 애니메이션 UX 구현, MUI로 개발 생산성 확보, 기획팀(Jira)·디자인팀(Figma)과의 협업으로 UI/UX 완성도 제고",
+          "outcome": "브랜드 인지도 제고 및 사용자 경험 향상"
+        },
+        {
+          "title": "보라캣 공식 홈페이지 개발 및 운영",
+          "summary": "기획팀(Jira), 디자인팀(Figma)과 협업한 SEO 최적화 및 상태 관리 시스템 구축",
+          "techStack": ["Next.js", "TypeScript", "date-fns", "MUI", "Zustand", "React-Query"],
+          "role": "Next.js 기반 SEO 최적화, 전역 상태 관리 시스템 구축",
+          "contribution": "Zustand 및 Next.js 기능 활용, 기획팀(Jira)·디자인팀(Figma)과의 협업으로 개발/운영 효율 극대화",
+          "outcome": "검색 노출 및 유지보수 효율성 향상"
+        },
+        {
+          "title": "게임용 번역 파일 전환툴 개발",
+          "summary": "내부 업무 효율성 증대용 데스크톱 유틸리티 (독자 개발)",
+          "techStack": ["React", "AntDesign UI", "Electron"],
+          "role": "데스크톱 기반 유틸리티 툴 기획·설계·개발 전과정 단독 수행",
+          "contribution": "Electron을 활용한 크로스 플랫폼 파일 전환툴을 독자적으로 설계 및 구현",
+          "outcome": "내부 번역 업무 자동화 및 효율화"
+        }
+      ],
       "published": true
     },
     {
       "name": "(주)게임덱스",
       "time": "2017/11 ~ 2021/06 (3년 8개월)",
-      "desc": "[번역툴 개발]\n번역에 도움이 되는 웹툴 개발\n  FE: HTML, jQuery, css\n  BE: Node.js, aws 배포\n\n[중국어 현지화 번역]\n참여 했던 프로젝트는 [오션앤엠파이어], [건쉽배틀:토탈워페어], [캐리비안의 해적: 전쟁의물결], [진시황], [주사위의 신], [프리스타일], [블레스M], [창세기전: 안타리아의 전쟁], [아이언탱크], [크로스파이어:워존] 및 기타 외주 등등 입니다.",
+      "projects": [
+        {
+          "title": "번역툴 개발",
+          "summary": "번역 업무 효율화 웹툴 개발",
+          "techStack": ["HTML", "jQuery", "CSS", "Node.js", "AWS"],
+          "role": "FE: HTML, jQuery, CSS / BE: Node.js, AWS 배포",
+          "contribution": "번역에 도움이 되는 웹툴 개발 및 배포",
+          "outcome": "사내 번역 프로세스 자동화 및 품질 향상"
+        },
+        {
+          "title": "중국어 현지화 번역",
+          "summary": "글로벌 게임의 중국어 현지화 및 품질 관리",
+          "techStack": ["중국어 번역", "게임 현지화", "QA"],
+          "role": "다수 게임 프로젝트의 중국어 번역 및 현지화, 번역 품질 관리 및 용어 통일",
+          "contribution": "오션앤엠파이어, 건쉽배틀:토탈워페어, 캐리비안의 해적: 전쟁의물결, 진시황, 주사위의 신, 프리스타일, 블레스M, 창세기전: 안타리아의 전쟁, 아이언탱크, 크로스파이어:워존 등 주요 타이틀 번역 및 현지화 QA 참여",
+          "outcome": "글로벌 서비스 일정 준수, 현지 유저 친화적 번역 품질 및 게임 몰입도 향상에 기여"
+        }
+      ],
       "published": true
     },
     {
       "name": "sdo (盛大网络)",
       "time": "2007/12 ~ 2010/12 (3년 1개월)",
-      "desc": "[게임기획운영]\n게임 이벤트 기획 및 게임 마스터 운영툴 웹코딩.\n\n[중국어 일본어 번역]\n문서 번역, 회의 통역. 해외 게임 업계 동향 수집.",
+      "projects": [
+        {
+          "title": "게임기획 및 운영툴 개발",
+          "summary": "게임 이벤트 기획 및 운영툴 웹코딩",
+          "role": "게임 이벤트 기획, 게임 마스터 운영툴 웹코딩",
+          "outcome": "운영 효율화 및 이벤트 관리 자동화"
+        },
+        {
+          "title": "중국어/일본어 번역 및 통역",
+          "summary": "문서 번역, 회의 통역, 업계 동향 수집",
+          "role": "중국어/일본어 문서 번역, 회의 통역, 해외 게임 업계 동향 수집",
+          "outcome": "글로벌 커뮤니케이션 및 정보 수집 지원"
+        }
+      ],
       "url": "https://www.shengqugames.com/cn/index",
       "published": true
     },
     {
       "name": "(주)팡게임, (주)룽투, (주)조이시티, 奥黁, 文友, 幸运草工艺품有限公司",
       "time": "2006/09 - 2017/11 (약 5년)",
-      "desc": "주로 번역 업무 위주.",
+      "projects": [
+        {
+          "title": "게임 번역 및 현지화",
+          "summary": "다수 게임 및 문서 번역 업무 수행",
+          "role": "중국어/일본어/한국어 게임 및 문서 번역, 현지화 지원",
+          "outcome": "글로벌 게임 현지화 및 커뮤니케이션 지원"
+        }
+      ],
       "published": false
     }
   ],
