@@ -1,5 +1,6 @@
 {
   "name": "김희동",
+  "resume": "이력서",
   "info": "{{birth}}",
   "address": "경기도 안양시",
   "nationality": "대한민국",
@@ -224,7 +225,6 @@
   "pentapeak-info": "회사 프로젝트:\n프론트 1명 + 백엔드 1명.\n프론트 개발 및 운영.\nReact, AWS.",
   "spacegears-info": "회사 프로젝트:\n프론트 5명 + 백엔드 2명.\n프론트 개발 및 운영.\nReact, AWS.",
   "ui79-info": "개인 프로젝트:\n프론트 1명 + 백엔드 1명.\n프론트 개발 및 운영.\nReact, PWA",
-  "resume": "이력서",
   "portfolio": "포트폴리오",
   "view": "보기",
   "detail": "상세보기",

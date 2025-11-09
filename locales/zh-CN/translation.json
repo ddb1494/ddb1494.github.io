@@ -1,5 +1,6 @@
 {
   "name": "金熙栋",
+  "resume": "简历",
   "info": "{{birth}}",
   "address": "京畿道安养市",
   "nationality": "韩国",
@@ -224,7 +225,6 @@
   "pentapeak-info": "公司项目:\n前端1名 + 后端1名。\n前端开发及运营。\nReact, AWS。",
   "spacegears-info": "公司项目:\n前端5名 + 后端2名。\n前端开发及运营。\nReact, AWS。",
   "ui79-info": "个人项目:\n前端1名 + 后端1名。\n前端开发及运营。\nReact, PWA",
-  "resume": "简历",
   "portfolio": "作品集",
   "view": "查看",
   "detail": "详情",
