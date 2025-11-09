@@ -1,209 +1,233 @@
 {
   "name": "金熙栋",
-  "info": "男，{{birth}}",
-  "position": "网页开发程序员(6年)",
-  "address": "居住在京畿道安养市",
-  "culture": "企业文化",
+  "info": "{{birth}}",
+  "address": "京畿道安养市",
+  "nationality": "韩国",
+  "culture": "公司文化",
   "education": "学历",
-  "experience": "工作履历",
-  "experience-info": "韩语翻译(10年)",
+  "experience": "工作经历",
+  "experience-info": "中文翻译（10年经验）",
+  "experience-developer": "Web开发者（6年经验）",
+  "experience-translator": "中文翻译（10年经验）",
+  "tech-stack": "技术",
+  "role": "角色",
+  "challenge": "挑战",
+  "solution": "解决方案",
+  "contribution": "贡献",
+  "outcome": "成果",
+  "all-experience": "全部",
+  "developer-experience": "开发",
+  "translator-experience": "翻译",
   "experiences": [
     {
-      "name": "Farmzone SNC",
-      "time": "2024/07 ~ 2025/03 （8个月）",
+      "name": "FarmzoneSNC",
+      "time": "2024/07 ~ 2025/03 (8个月)",
       "projects": [
         {
-          "title": "Our Home QSIS外包开发",
-          "summary": "提升系统稳定性并成功完成系统建设",
+          "title": "Our Home QSIS 开发",
+          "summary": "运营稳定性贡献及系统构建完成",
           "techStack": ["React", "TypeScript", "React Query", "Ant Design"],
-          "role": "项目收尾阶段紧急加入，负责运维开发。快速解决主要故障（Critical/Major），确保系统稳定。根据运维团队需求开发新功能。",
-          "contribution": "诊断数据一致性问题，利用React Query缓存策略，严格应用TypeScript以最小化运行时错误。",
-          "outcome": "圆满完成最终需求，系统零故障交付，顺利移交客户（Our Home），SI项目成功收官。"
+          "role": "项目冲刺阶段紧急投入，负责运营开发。快速解决关键/主要错误并确保系统稳定性。基于运营团队需求进行新功能开发",
+          "contribution": "诊断数据一致性问题，利用React Query缓存策略，严格应用TypeScript以最小化运行时错误",
+          "outcome": "完成最终需求并构建无错误系统，向客户（아워홈）稳定交付，SI项目成功收尾"
         },
         {
-          "title": "Hanwha Vision Web FE开发",
-          "summary": "提升运维稳定性与高质量管理",
+          "title": "韩华视觉 Web FE 开发",
+          "summary": "运营稳定化及高质量管理贡献",
           "techStack": ["React", "TypeScript", "React Query", "Ant Design UI"],
-          "role": "收尾阶段紧急加入，负责系统稳定与维护。改善代码质量，满足客户编码风格与静态分析标准，修复Bug并开发新功能。",
-          "challenge": "严格遵守客户编码风格/静态分析标准，临近交付时Figma UI变更及代码理解多重挑战。",
-          "solution": "ESLint/Prettier自动化，利用高效调试与TypeScript隔离变更副作用。",
-          "outcome": "满足客户高标准代码与质量要求，顺利通过最终验收与交付，助力服务稳定。"
+          "role": "冲刺阶段紧急投入，系统稳定化及维护。满足客户编码风格/静态分析标准，改进代码质量及错误/功能增加",
+          "challenge": "遵守客户严格的编码风格/静态分析标准，项目截止前Figma UI变更及代码理解的多重困难",
+          "solution": "ESLint/Prettier自动化，高效调试/TypeScript隔离变更副作用",
+          "outcome": "满足客户质量标准，完成最终审查/交付，服务稳定化贡献"
         }
       ],
-      "published": true
+      "published": true,
+      "type": "developer"
     },
     {
-      "name": "2Bytes Corp",
-      "time": "2021/06 ~ 2024/02 （2年9个月）",
+      "name": "2Bytes",
+      "time": "2021/06 ~ 2024/02 (2年9个月)",
       "projects": [
         {
-          "title": "2Bytes Corp官网开发与维护",
-          "summary": "与策划团队（Jira）、设计团队（Figma）协作，建设与维护企业官网",
+          "title": "2Bytes 官方网站开发及运营",
+          "summary": "与规划团队(Jira)、设计团队(Figma)协作的企业官方网站构建及维护",
           "techStack": ["React", "gsap", "jQuery", "NotionAPI", "SlackAPI", "styled-components"],
-          "role": "从零开发并持续负责官网运维",
-          "contribution": "集成Notion与Slack，实时协作策划（Jira）与设计（Figma）团队，实现内容与通知自动化。",
-          "outcome": "强化企业线上品牌，提升内部协作效率。"
+          "role": "从初期开始进行网站开发及持续运营/维护",
+          "contribution": "Notion及Slack集成，与规划团队(Jira)·设计团队(Figma)实时协作及内容/通知自动化实现",
+          "outcome": "企业在线品牌强化及内部工作效率化"
         },
         {
-          "title": "Pentapeak官网开发/运维",
-          "summary": "与策划团队（Jira）、设计团队（Figma）协作，游戏工作室官网升级",
+          "title": "Pentapick 官方网站开发/运营",
+          "summary": "与规划团队(Jira)、设计团队(Figma)协作的游戏工作室官方网站升级",
           "techStack": ["React", "TypeScript", "React-Query", "SlackAPI", "styled-components"],
-          "role": "从项目初期参与，基于TypeScript与React-Query重构并运维",
-          "contribution": "与策划（Jira）、设计（Figma）团队紧密协作，提升代码质量与数据管理效率。",
-          "outcome": "实现稳定运维与高效开发。"
+          "role": "从初期开始投入开发，基于TypeScript及React-Query进行开发及运营",
+          "contribution": "开发及维护过程中与规划团队(Jira)、设计团队(Figma)密切协作，提高代码质量及数据管理效率",
+          "outcome": "稳定运营及维护，开发生产率提升"
         },
         {
-          "title": "Spacegears官网开发与运维",
-          "summary": "与策划团队（Jira）、设计团队（Figma）协作，打造品牌官网",
+          "title": "Space Gears 官方网站开发及运营",
+          "summary": "与规划团队(Jira)、设计团队(Figma)协作的手机游戏品牌标识反映网站构建",
           "techStack": ["React", "TypeScript", "gsap", "MUI", "React-Query", "styled-components"],
-          "role": "负责响应式官网开发与运维",
-          "contribution": "gsap高质量动画UX，MUI提升开发效率，协作策划（Jira）与设计（Figma）团队优化UI/UX。",
-          "outcome": "提升品牌认知与用户体验。"
+          "role": "响应式网站构建及运营",
+          "contribution": "利用gsap实现高质量动画UX，通过MUI确保开发生产率，与规划团队(Jira)·设计团队(Figma)协作提高UI/UX完成度",
+          "outcome": "品牌认知度提升及用户体验改善"
         },
         {
-          "title": "Boracat官网开发与运维",
-          "summary": "与策划团队（Jira）、设计团队（Figma）协作，SEO优化与状态管理系统建设",
+          "title": "BoraCat 官方网站开发及运营",
+          "summary": "与规划团队(Jira)、设计团队(Figma)协作的SEO优化及状态管理系统构建",
           "techStack": ["Next.js", "TypeScript", "date-fns", "MUI", "Zustand", "React-Query"],
-          "role": "基于Next.js实现SEO优化与全局状态管理",
-          "contribution": "集成Zustand与Next.js，协作策划（Jira）与设计（Figma）团队提升开发与运维效率。",
-          "outcome": "提升搜索曝光与维护效率。"
+          "role": "基于Next.js的SEO优化，全局状态管理系统构建",
+          "contribution": "利用Zustand及Next.js功能，与规划团队(Jira)·设计团队(Figma)协作极大化开发/运营效率",
+          "outcome": "搜索曝光及维护效率提升"
         },
         {
           "title": "游戏翻译文件转换工具开发",
-          "summary": "独立开发的桌面端效率工具",
+          "summary": "内部工作效率化桌面实用程序（独立开发）",
           "techStack": ["React", "AntDesign UI", "Electron"],
-          "role": "全流程独立策划、设计与开发桌面工具",
-          "contribution": "独立设计并实现基于Electron的跨平台文件转换工具。",
-          "outcome": "自动化内部翻译流程，提升效率。"
+          "role": "桌面实用程序工具规划·设计·开发全过程独立执行",
+          "contribution": "利用Electron设计及实现跨平台文件转换工具",
+          "outcome": "内部翻译业务自动化及效率化"
         }
       ],
-      "published": true
+      "published": true,
+      "type": "developer"
     },
     {
       "name": "GameDex",
-      "time": "2017/11 ~ 2021/06 （3年8个月）",
+      "time": "2017/11 ~ 2021/06 (3年8个月)",
       "projects": [
         {
           "title": "翻译工具开发",
-          "summary": "提升翻译效率的Web工具开发",
+          "summary": "翻译业务效率化网络工具开发",
           "techStack": ["HTML", "jQuery", "CSS", "Node.js", "AWS"],
-          "role": "前端：HTML, jQuery, CSS / 后端：Node.js, AWS部署",
-          "contribution": "开发并上线有助于翻译的Web工具。",
-          "outcome": "自动化公司翻译流程，提升质量。"
+          "role": "FE: HTML, jQuery, CSS / BE: Node.js, AWS部署",
+          "contribution": "开发及部署有助于翻译的网络工具",
+          "outcome": "公司翻译流程自动化及质量提升",
+          "type": "developer"
         },
         {
           "title": "中文本地化翻译",
-          "summary": "全球游戏中文本地化与质量管理",
-          "techStack": ["中文翻译", "游戏本地化", "QA"],
-          "role": "负责多款游戏的中文翻译、本地化与术语统一，翻译质量管理。",
-          "contribution": "参与Ocean&Empire、Gunship Battle: Total Warfare、加勒比海盗：战争之潮、秦始皇、骰子之神、Freestyle、Bless M、创世纪战：安塔利亚战争、Iron Tank、CrossFire: Warzone等主要项目的翻译与本地化QA。",
-          "outcome": "保障全球服务进度，提升本地化质量与玩家沉浸感。"
+          "summary": "全球游戏中文本地化及质量管理",
+          "techStack": ["中文", "本地化", "QA"],
+          "role": "多个游戏项目中文翻译及本地化，翻译质量管理及术语统一",
+          "contribution": "참여 타이틀: Ocean&Empire, Gunship Battle:Total Warfare, Caribbean:War of Waves, Qin Shi Huang, God of Dice, Freestyle, Bless M, Genesis War: Antaria War, Iron Tank, Crossfire:Warzone 등 주요 타이틀 번역 및 현지화 QA 참여",
+          "outcome": "全球服务日程准守，本地用户友好型翻译质量及游戏沉浸度提升贡献",
+          "type": "translator"
         }
       ],
-      "published": true
+      "published": true,
+      "type": "mixed"
     },
     {
-      "name": "sdo（盛大网络）",
-      "time": "2007/12 ~ 2010/12 （3年1个月）",
+      "name": "ShanDa (盛大网络)",
+      "time": "2007/12 ~ 2010/12 (3年1个月)",
       "projects": [
         {
-          "title": "游戏策划与运营工具开发",
-          "summary": "游戏活动策划与运营工具Web开发",
-          "role": "负责游戏活动策划与GM运营工具Web开发",
-          "outcome": "提升运营效率，实现活动管理自动化。"
+          "title": "游戏规划及运营工具开发",
+          "summary": "游戏事件规划及运营工具网络编码",
+          "techStack": ["javaScript", "HTML", "CSS", "batch script"],
+          "role": "游戏事件规划，游戏管理员运营工具网络编码",
+          "outcome": "运营效率化及事件管理自动化",
+          "type": "developer"
         },
         {
-          "title": "中日韩翻译与口译",
-          "summary": "文档翻译、会议口译、行业情报收集",
-          "role": "负责中日韩文档翻译、会议口译、海外游戏行业情报收集",
-          "outcome": "支持全球沟通与信息收集。"
+          "title": "中文/日文翻译及口译",
+          "summary": "文档翻译、会议口译、行业动向收集",
+          "techStack": ["中文", "日文"],
+          "role": "中文/日文文档翻译，会议口译，海外游戏行业动向收集",
+          "outcome": "全球沟通及信息收集支持",
+          "type": "translator"
         }
       ],
       "url": "https://www.shengqugames.com/cn/index",
-      "published": true
+      "published": true,
+      "type": "mixed"
     },
     {
-      "name": "PangGame、Longtu、JoyCity、奥黁、文友、幸运草工艺品有限公司",
-      "time": "2006/09 - 2017/11 （约5年）",
+      "name": "(주)팡게임, (주)룽투, (주)조이시티, 奥黁, 文友, 幸运草工艺品有限公司",
+      "time": "2006/09 - 2017/11 (约5年)",
       "projects": [
         {
-          "title": "游戏翻译与本地化",
-          "summary": "多款游戏及文档翻译工作",
-          "role": "负责中/日/韩游戏及文档翻译与本地化支持",
-          "outcome": "助力全球游戏本地化与沟通。"
+          "title": "游戏翻译及本地化",
+          "summary": "多个游戏及文档翻译业务执行",
+          "role": "中文/日文/韩文游戏及文档翻译，本地化支持",
+          "outcome": "全球游戏本地化及沟通支持"
         }
       ],
-      "published": false
+      "published": false,
+      "type": "translator"
     }
   ],
   "educations": [
     {
       "name": "延边大学",
-      "time": "2002/09 ~ 2006/06 （4年制）",
-      "desc": "语言文学教育学科  -  中国",
+      "time": "2002/09 ~ 2006/06 (4年制)",
+      "desc": "语言文学教育学科",
       "status": "学士毕业",
       "link": "https://www.chsi.com.cn/xlrz/bgcx.jsp?v=7223389-11-2E9B32FB",
       "published": true
     },
     {
-      "name": "延边第一高等中学",
-      "time": "1999/09 ~ 2002/06 （3年制）",
-      "desc": "日语班  -  中国",
+      "name": "延边第一高等学校",
+      "time": "1999/09 ~ 2002/06 (3年制)",
+      "desc": "日文班",
       "status": "毕业",
-      "published": true
+      "published": false
     }
   ],
   "cultures": [
     {
-      "title": "弹性工作制",
-      "description": "时差上下班和在家办公的公司。"
+      "title": "灵活工作制",
+      "description": "可以错峰上班和远程工作的公司。"
     },
     {
-      "title": "加班",
-      "description": "必要时可回家继续加班的公司。"
+      "title": "加班安排",
+      "description": "必要时可以下班后远程工作的公司。"
     },
     {
-      "title": "年假理由",
-      "description": "不深究年假理由的公司。"
+      "title": "年假政策",
+      "description": "不询问年假理由的公司。"
     },
     {
-      "title": "聚餐、酒、烟",
-      "description": "对于公司聚餐、烟、酒，不强加于人的公司。"
+      "title": "聚会、酒精、烟草",
+      "description": "不强制参与聚会、饮酒和吸烟的公司。"
     }
   ],
-  "skill": "技术",
+  "skill": "技术栈",
   "mode": {
-    "light": "亮色模式",
-    "dark": "暗色模式",
+    "light": "浅色模式",
+    "dark": "深色模式",
     "system": "自动模式"
   },
-  "ko": "韩语",
-  "zh-CN": "简体中文",
-  "jp": "日语",
+  "ko": "韩文",
+  "zh-CN": "中文",
+  "jp": "日文",
   "birth-label": "出生日期",
   "address-label": "居住地",
+  "nationality-label": "国籍",
   "position-label": "职务",
   "experience-label": "经验",
-  "kakaotalk": "Kakao Talk 1:1",
+  "education-label": "学历",
+  "kakaotalk": "KakaoTalk 1:1",
   "qsis": "QSIS",
   "qsis-hostname": "qsis.ourhome.co.kr",
-  "qsis-info": "公司项目：\n前端1人+后端1人。\n前端开发及运营。\nReact, SFTP。",
-  "2bytescorp": "2bytescorp",
+  "qsis-info": "公司项目:\n前端1名 + 后端1名。\n前端开发及运营。\nReact, SFTP。",
+  "2bytescorp": "2bytes",
   "2bytescorp-hostname": "2bytescorp.com",
-  "pentapeak": "Pentapeak Studios",
+  "pentapeak": "Pentapick Studio",
   "pentapeak-hostname": "pentapeakstudios.com",
   "spacegears": "Space Gears",
+  "ui79": "ui79",
+  "ui79-hostname": "ui79-com.github.io",
   "spacegears-hostname": "spacegears.game",
-  "ui79": "You I Friend",
-  "ui79-hostname": "ui79.com",
-  "2bytescorp-info": "公司项目：\n前端1人+后端1人。\n前端开发及运营。\nReact, AWS。",
-  "pentapeak-info": "公司项目：\n前端1人+后端1人。\n前端开发及运营。\nReact, AWS。",
-  "spacegears-info": "公司项目：\n前端5人+后端2人。\n前端开发及运营。\nReact, AWS。",
-  "ui79-info": "个人项目：\n前端1人+后端1人。\n前端开发及运营。\nReact, PWA。",
+  "2bytescorp-info": "公司项目:\n前端1名 + 后端1名。\n前端开发及运营。\nReact, AWS。",
+  "pentapeak-info": "公司项目:\n前端1名 + 后端1名。\n前端开发及运营。\nReact, AWS。",
+  "spacegears-info": "公司项目:\n前端5名 + 后端2名。\n前端开发及运营。\nReact, AWS。",
+  "ui79-info": "个人项目:\n前端1名 + 后端1名。\n前端开发及运营。\nReact, PWA",
   "resume": "简历",
   "portfolio": "作品集",
   "view": "查看",
-  "detail": "详细信息",
+  "detail": "详情",
   "frontend": "前端",
   "backend": "后端",
   "database": "数据库",
@@ -216,34 +240,33 @@
       "backend": "Express, Sequelize, Node",
       "database": "Postgres",
       "outcome-url": "https://tm6.cihot.com",
-      "features": "实时任务管理，离线支持，响应式设计"
+      "features": "实时任务管理、离线支持、响应式设计"
     },
     {
-      "title": "Job Korea 浏览器扩展",
-      "description": "招聘信息筛选浏览器扩展",
+      "title": "JobKorea谷歌浏览器扩展程序",
+      "description": "招聘信息过滤浏览器扩展",
       "frontend": "JavaScript, HTML5, CSS3",
       "backend": "Chrome Extension API",
       "database": "Local Storage",
-      "features": "自动筛选，书签功能，搜索优化",
-      "detail-url": "/portfolios/jobkorea"
+      "features": "自动过滤、书签功能、搜索改进"
     },
     {
-      "title": "2Bytes Corp 官方网站",
-      "description": "企业官方主页",
+      "title": "2bytes 官方网站",
+      "description": "企业官方首页",
       "frontend": "React, GSAP, jQuery",
       "backend": "NotionAPI, SlackAPI",
       "database": "Notion Database",
       "outcome-url": "https://2bytescorp.com",
-      "features": "动画效果，SEO优化，管理员仪表板"
+      "features": "动画效果、SEO优化、管理员仪表板"
     },
     {
-      "title": "Pentapeak Studios",
+      "title": "Pentapick Studio",
       "description": "游戏工作室作品集网站",
       "frontend": "React, TypeScript, React-Query",
       "backend": "SlackAPI",
       "database": "JSON API",
       "outcome-url": "https://pentapeakstudios.com",
-      "features": "游戏作品集画廊，新闻系统，团队介绍"
+      "features": "游戏作品集画廊、新闻系统、团队介绍"
     },
     {
       "title": "Space Gears",
@@ -252,25 +275,76 @@
       "backend": "REST API",
       "database": "MySQL",
       "outcome-url": "https://spacegears.game",
-      "features": "游戏攻略，活动页面，社区功能"
+      "features": "游戏指南、活动页面、社区功能"
     },
     {
       "title": "翻译支持工具",
-      "description": "游戏本地化Web工具",
+      "description": "游戏本地化网络工具",
       "frontend": "HTML, jQuery, CSS",
       "backend": "Node.js, Express",
       "database": "MongoDB",
-      "features": "术语管理，翻译进度跟踪，质量检查"
+      "features": "术语集管理、翻译进度追踪、质量检查"
     }
   ],
-  "job-description": "工作描述",
-  "blood-type-a": "血型 A型",
-  "about-me": "关于我",
-  "about-me-article": "■ 专业能力及工作概述\n\n具备6年Web开发经验，专精前端开发领域，成功完成多个企业级项目。在React生态系统和现代Web技术应用方面拥有丰富的实战经验，致力于打造以用户为中心的优质界面。\n\n■ 核心技术栈及专业领域\n\n• 前端技术: React, TypeScript, Vite, Next.js\n• UI/UX: Ant Design, MUI, 响应式Web设计\n• 状态管理: React Query, Context API\n• 开发工具: VSCode, Git, GitHub, Docker\n• 协作工具: Slack, Jira, Figma\n\n■ 主要成果及项目经验\n\n**Farmzone SNC (2024.07 ~ 至今)**\n- 负责QSIS外包项目前端开发\n- HanWha Vision Toolbox2 React功能开发与维护\n\n**2Bytes Corp (2021.06 ~ 2024.02)**\n- 多家企业官网前端开发及维护\n- 基于React.js、TypeScript构建现代化Web应用\n- 开发内部工具提升业务效率 (Excel-JSON转换工具)\n\n**GameDex (2017.11 ~ 2021.06)**\n- 开发翻译业务支持Web工具 (Node.js, jQuery)\n- 参与多个多语言本地化项目\n\n■ 开发理念及工作方式\n\n始终以用户体验(UX)为核心进行开发。不仅仅是实现功能，更注重设计直观便捷的用户界面。通过持续学习积极引入最新技术趋势，不断提升项目质量和可维护性。\n\n■ 未来目标\n\n紧跟Web技术发展趋势，目标成长为全栈开发工程师，特别希望在以用户为中心的创新Web服务开发方面贡献自己的力量。",
-  "about-me-tip": "■ 个人特质\n\n• 追求健康的生活方式，无吸烟习惯\n• 重视工作与个人时间的平衡\n• 兴趣爱好: 手游《皇室战争》、电影欣赏，通过娱乐获取创意灵感",
-  "education-certificate": "查看学历证书",
-  "education-subtitle": "学历及教育履历",
-  "experience-subtitle": "专业经历与成长历程",
-  "portfolio-subtitle": "查看丰富的项目经验",
-  "skillset-subtitle": "专业技术栈与开发工具"
+  "developer-skills": [
+    { "name": "React", "category": "fe", "type": "primary" },
+    { "name": "TypeScript", "category": "fe", "type": "primary" },
+    { "name": "ReactQuery", "category": "fe", "type": "secondary" },
+    { "name": "Zustand", "category": "fe", "type": "secondary" },
+    { "name": "Ant Design", "category": "fe", "type": "secondary" },
+    { "name": "MUI", "category": "fe", "type": "secondary" },
+    { "name": "Styled-Components", "category": "fe", "type": "secondary" },
+    { "name": "Vite", "category": "fe", "type": "secondary" },
+    { "name": "Datefns", "category": "fe", "type": "secondary" },
+    { "name": "Next.js", "category": "fe", "type": "secondary" },
+    { "name": "HTML5", "category": "fe", "type": "secondary" },
+    { "name": "JavaScript", "category": "fe", "type": "secondary" },
+    { "name": "CSS3", "category": "fe", "type": "secondary" },
+    { "name": "JQuery", "category": "fe", "type": "secondary" },
+    { "name": "GSAP", "category": "fe", "type": "secondary" },
+    { "name": "PWA", "category": "fe", "type": "secondary" },
+    { "name": "Node.js", "category": "be", "type": "primary" },
+    { "name": "KOA", "category": "be", "type": "secondary" },
+    { "name": "Express", "category": "be", "type": "secondary" },
+    { "name": "Socket.IO", "category": "be", "type": "secondary" },
+    { "name": "AWS", "category": "be", "type": "primary" },
+    { "name": "AWS S3", "category": "be", "type": "secondary" },
+    { "name": "AWS CloudFront", "category": "be", "type": "secondary" },
+    { "name": "AWS Route53", "category": "be", "type": "secondary" },
+    { "name": "AWS LightSail", "category": "be", "type": "secondary" },
+    { "name": "ORM (Prisma)", "category": "be", "type": "primary" },
+    { "name": "PostgreSQL", "category": "be", "type": "secondary" },
+    { "name": "MariaDB", "category": "be", "type": "secondary" },
+    { "name": "VSCode", "category": "tool", "type": "primary" },
+    { "name": "Copilot", "category": "tool", "type": "secondary" },
+    { "name": "GitHub", "category": "tool", "type": "primary" },
+    { "name": "Docker", "category": "tool", "type": "primary" },
+    { "name": "Slack", "category": "tool", "type": "secondary" },
+    { "name": "Jira", "category": "tool", "type": "secondary" },
+    { "name": "Figma", "category": "tool", "type": "secondary" },
+    { "name": "MacOS", "category": "os", "type": "primary" },
+    { "name": "Windows", "category": "os", "type": "secondary" },
+    { "name": "Ubuntu", "category": "os", "type": "secondary" },
+    { "name": "Linux", "category": "os", "type": "secondary" }
+  ],
+  "translator-skills": [
+    { "name": "韩文", "category": "language", "type": "primary" },
+    { "name": "中文(简体)", "category": "language", "type": "primary" },
+    { "name": "日文", "category": "language", "type": "primary" },
+    { "name": "游戏本地化", "category": "localization", "type": "primary" },
+    { "name": "网络服务翻译", "category": "localization", "type": "primary" },
+    { "name": "技术文档翻译", "category": "localization", "type": "primary" },
+    { "name": "视频字幕翻译", "category": "localization", "type": "secondary" },
+    { "name": "CAT工具", "category": "tool", "type": "secondary" },
+    { "name": "术语数据库", "category": "tool", "type": "secondary" },
+    { "name": "QA工具", "category": "tool", "type": "secondary" }
+  ],
+  "job-description": "职业技能书",
+  "blood-type-a": "血型A型",
+  "about-me": "自我介绍",
+  "about-me-article": "■ 专业能力及经历概述\n\n基于6年的Web开发经验，作为前端专家成功执行了各种项目。特别是在利用React生态系统和最新Web技术进行以用户为中心的界面开发方面具有专业性。\n\n■ 核心技术栈及专业领域\n\n• 前端: React, TypeScript, Vite, Next.js\n• UI/UX: Ant Design, MUI, 响应式网页设计\n• 状态管理: React Query, Context API\n• 开发工具: VSCode, Git, GitHub, Docker\n• 协作工具: Slack, Jira, Figma\n\n■ 主要成果及项目经验\n\n**팜존에스엔씨 (2024.07 ~ 现在)**\n- QSIS外包项目前端开发负责\n- HanWha Vision Toolbox2 React功能追加/修改开发\n\n**투바이트 (2021.06 ~ 2024.02)**\n- 多个企业官方网站前端开发及维护\n- 基于React.js、TypeScript的现代Web应用构建\n- 通过内部工具开发改进工作效率(Excel-JSON转换工具)\n\n**게임덱스 (2017.11 ~ 2021.06)**\n- 翻译业务支持网络工具开发(Node.js, jQuery)\n- 多国语言本地化项目参与\n\n■ 开发理念及方式\n\n以用户体验(UX)为优先进行开发。不仅仅是实现功能，而是重点放在设计用户可以直观方便使用的界面。同时通过持续学习积极采用最新技术趋势，提升项目质量和可维护性。\n\n■ 未来目标\n\n跟上Web技术的持续发展，以全栈开发者身份成长为目标，特别是希望为用户中心的创新型Web服务开发做出贡献。",
+  "about-me-tip": "■ 个人特性\n\n• 追求健康的生活方式，已戒烟。\n• 重视工作与个人时间的平衡。\n• 爱好: 手机游戏(Clash Royale)、通过看电影获取创意灵感",
+  "education-certificate": "学历认证确认",
+  "education-subtitle": "学历及教育经历",
+  "portfolio-subtitle": "请查看各种项目经验"
 }

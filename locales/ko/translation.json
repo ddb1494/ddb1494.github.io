@@ -1,12 +1,23 @@
 {
   "name": "김희동",
   "info": "{{birth}}",
-  "position": "웹 개발자 (6년차)",
-  "address": "경기도 안양시 거주",
+  "address": "경기도 안양시",
+  "nationality": "대한민국",
   "culture": "컬쳐",
   "education": "학력",
   "experience": "경력",
   "experience-info": "중국어 번역가 (10년차)",
+  "experience-developer": "웹 개발자 (6년차)",
+  "experience-translator": "중국어 번역가 (10년차)",
+  "tech-stack": "기술",
+  "role": "역할",
+  "challenge": "도전",
+  "solution": "해결",
+  "contribution": "기여",
+  "outcome": "성과",
+  "all-experience": "전체",
+  "developer-experience": "개발",
+  "translator-experience": "번역",
   "experiences": [
     {
       "name": "(주)팜존에스엔씨",
@@ -30,7 +41,8 @@
           "outcome": "고객사 품질 표준 만족, 최종 검수/인수인계 완료, 서비스 안정화 기여"
         }
       ],
-      "published": true
+      "published": true,
+      "type": "developer"
     },
     {
       "name": "투바이트(주)",
@@ -77,7 +89,8 @@
           "outcome": "내부 번역 업무 자동화 및 효율화"
         }
       ],
-      "published": true
+      "published": true,
+      "type": "developer"
     },
     {
       "name": "(주)게임덱스",
@@ -89,7 +102,8 @@
           "techStack": ["HTML", "jQuery", "CSS", "Node.js", "AWS"],
           "role": "FE: HTML, jQuery, CSS / BE: Node.js, AWS 배포",
           "contribution": "번역에 도움이 되는 웹툴 개발 및 배포",
-          "outcome": "사내 번역 프로세스 자동화 및 품질 향상"
+          "outcome": "사내 번역 프로세스 자동화 및 품질 향상",
+          "type": "developer"
         },
         {
           "title": "중국어 현지화 번역",
@@ -97,13 +111,15 @@
           "techStack": ["중국어", "현지화", "QA"],
           "role": "다수 게임 프로젝트의 중국어 번역 및 현지화, 번역 품질 관리 및 용어 통일",
           "contribution": "오션앤엠파이어, 건쉽배틀:토탈워페어, 캐리비안의 해적: 전쟁의물결, 진시황, 주사위의 신, 프리스타일, 블레스M, 창세기전: 안타리아의 전쟁, 아이언탱크, 크로스파이어:워존 등 주요 타이틀 번역 및 현지화 QA 참여",
-          "outcome": "글로벌 서비스 일정 준수, 현지 유저 친화적 번역 품질 및 게임 몰입도 향상에 기여"
+          "outcome": "글로벌 서비스 일정 준수, 현지 유저 친화적 번역 품질 및 게임 몰입도 향상에 기여",
+          "type": "translator"
         }
       ],
-      "published": true
+      "published": true,
+      "type": "mixed"
     },
     {
-      "name": "sdo (盛大网络)",
+      "name": "ShanDa (盛大网络)",
       "time": "2007/12 ~ 2010/12 (3년 1개월)",
       "projects": [
         {
@@ -111,18 +127,21 @@
           "summary": "게임 이벤트 기획 및 운영툴 웹코딩",
           "techStack": ["javaScript", "HTML", "CSS", "batch script"],
           "role": "게임 이벤트 기획, 게임 마스터 운영툴 웹코딩",
-          "outcome": "운영 효율화 및 이벤트 관리 자동화"
+          "outcome": "운영 효율화 및 이벤트 관리 자동화",
+          "type": "developer"
         },
         {
           "title": "중국어/일본어 번역 및 통역",
           "summary": "문서 번역, 회의 통역, 업계 동향 수집",
           "techStack": ["중국어", "일본어"],
           "role": "중국어/일본어 문서 번역, 회의 통역, 해외 게임 업계 동향 수집",
-          "outcome": "글로벌 커뮤니케이션 및 정보 수집 지원"
+          "outcome": "글로벌 커뮤니케이션 및 정보 수집 지원",
+          "type": "translator"
         }
       ],
       "url": "https://www.shengqugames.com/cn/index",
-      "published": true
+      "published": true,
+      "type": "mixed"
     },
     {
       "name": "(주)팡게임, (주)룽투, (주)조이시티, 奥黁, 文友, 幸运草工艺품有限公司",
@@ -135,7 +154,8 @@
           "outcome": "글로벌 게임 현지화 및 커뮤니케이션 지원"
         }
       ],
-      "published": false
+      "published": false,
+      "type": "translator"
     }
   ],
   "educations": [
@@ -184,8 +204,10 @@
   "jp": "일본어",
   "birth-label": "생년월일",
   "address-label": "거주지",
+  "nationality-label": "국적",
   "position-label": "직무",
   "experience-label": "경험",
+  "education-label": "학력",
   "kakaotalk": "카카오톡 1:1",
   "qsis": "QSIS",
   "qsis-hostname": "qsis.ourhome.co.kr",
@@ -265,6 +287,59 @@
       "features": "용어집 관리, 번역 진행률 추적, 품질 검사"
     }
   ],
+  "developer-skills": [
+    { "name": "React", "category": "fe", "type": "primary" },
+    { "name": "TypeScript", "category": "fe", "type": "primary" },
+    { "name": "ReactQuery", "category": "fe", "type": "secondary" },
+    { "name": "Zustand", "category": "fe", "type": "secondary" },
+    { "name": "Ant Design", "category": "fe", "type": "secondary" },
+    { "name": "MUI", "category": "fe", "type": "secondary" },
+    { "name": "Styled-Components", "category": "fe", "type": "secondary" },
+    { "name": "Vite", "category": "fe", "type": "secondary" },
+    { "name": "Datefns", "category": "fe", "type": "secondary" },
+    { "name": "Next.js", "category": "fe", "type": "secondary" },
+    { "name": "HTML5", "category": "fe", "type": "secondary" },
+    { "name": "JavaScript", "category": "fe", "type": "secondary" },
+    { "name": "CSS3", "category": "fe", "type": "secondary" },
+    { "name": "JQuery", "category": "fe", "type": "secondary" },
+    { "name": "GSAP", "category": "fe", "type": "secondary" },
+    { "name": "PWA", "category": "fe", "type": "secondary" },
+    { "name": "Node.js", "category": "be", "type": "primary" },
+    { "name": "KOA", "category": "be", "type": "secondary" },
+    { "name": "Express", "category": "be", "type": "secondary" },
+    { "name": "Socket.IO", "category": "be", "type": "secondary" },
+    { "name": "AWS", "category": "be", "type": "primary" },
+    { "name": "AWS S3", "category": "be", "type": "secondary" },
+    { "name": "AWS CloudFront", "category": "be", "type": "secondary" },
+    { "name": "AWS Route53", "category": "be", "type": "secondary" },
+    { "name": "AWS LightSail", "category": "be", "type": "secondary" },
+    { "name": "ORM (Prisma)", "category": "be", "type": "primary" },
+    { "name": "PostgreSQL", "category": "be", "type": "secondary" },
+    { "name": "MariaDB", "category": "be", "type": "secondary" },
+    { "name": "VSCode", "category": "tool", "type": "primary" },
+    { "name": "Copilot", "category": "tool", "type": "secondary" },
+    { "name": "GitHub", "category": "tool", "type": "primary" },
+    { "name": "Docker", "category": "tool", "type": "primary" },
+    { "name": "Slack", "category": "tool", "type": "secondary" },
+    { "name": "Jira", "category": "tool", "type": "secondary" },
+    { "name": "Figma", "category": "tool", "type": "secondary" },
+    { "name": "MacOS", "category": "os", "type": "primary" },
+    { "name": "Windows", "category": "os", "type": "secondary" },
+    { "name": "Ubuntu", "category": "os", "type": "secondary" },
+    { "name": "Linux", "category": "os", "type": "secondary" }
+  ],
+  "translator-skills": [
+    { "name": "한국어", "category": "language", "type": "primary" },
+    { "name": "중국어(간체)", "category": "language", "type": "primary" },
+    { "name": "일본어", "category": "language", "type": "primary" },
+    { "name": "게임 현지화", "category": "localization", "type": "primary" },
+    { "name": "웹서비스 번역", "category": "localization", "type": "primary" },
+    { "name": "기술 문서 번역", "category": "localization", "type": "primary" },
+    { "name": "영상 자막 번역", "category": "localization", "type": "secondary" },
+    { "name": "CAT Tools", "category": "tool", "type": "secondary" },
+    { "name": "Terminology Database", "category": "tool", "type": "secondary" },
+    { "name": "QA Tools", "category": "tool", "type": "secondary" }
+  ],
   "job-description": "경력기술서",
   "blood-type-a": "혈액형 A형",
   "about-me": "자기소개서",
@@ -272,7 +347,5 @@
   "about-me-tip": "■ 개인적 특성\n\n• 건강한 라이프스타일을 추구하며, 금연자입니다.\n• 업무와 개인 시간의 균형을 중시합니다.\n• 취미: 모바일 게임(Clash Royale), 영화 감상을 통한 창의적 영감 획득",
   "education-certificate": "학력 인증서 확인",
   "education-subtitle": "학력 및 교육 이력",
-  "experience-subtitle": "전문 경력과 성장 여정",
-  "portfolio-subtitle": "다양한 프로젝트 경험을 확인해보세요",
-  "skillset-subtitle": "전문 기술 스택과 도구들"
+  "portfolio-subtitle": "다양한 프로젝트 경험을 확인해보세요"
 }
